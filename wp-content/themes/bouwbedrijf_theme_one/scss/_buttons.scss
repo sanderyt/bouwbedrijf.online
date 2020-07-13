@@ -1,0 +1,18 @@
+.btn {
+  padding: 20px;
+  color: white;
+  margin: 0 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $border-radius-button;
+
+  a {
+    color: white;
+  }
+}
+
+.elementor-button {
+  background-color: red;
+}

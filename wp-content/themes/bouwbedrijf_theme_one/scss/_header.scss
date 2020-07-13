@@ -1,0 +1,134 @@
+//Styling for header component
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+  box-shadow: $box-shadow-setting;
+  &__topbar {
+    background-color: $primary-color;
+    padding: 0% 8%;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ul {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    li {
+      flex-direction: column;
+      justify-content: center;
+      display: flex;
+      margin-left: 35px;
+      align-items: center;
+    }
+  }
+  &__main {
+    height: 100%;
+    position: relative;
+    display: flex;
+  }
+  &__logo {
+    display: flex;
+    flex: 1;
+    height: 75px;
+    align-items: center;
+    margin-left: 5%;
+
+    img {
+      height: 75px;
+      width: 150px;
+    }
+  }
+  &__menu {
+    display: flex;
+    flex: 1.5;
+    height: 75px;
+    margin-right: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+      flex-direction: column;
+      display: flex;
+      padding: 0 1rem;
+      font-size: $h3-font-size;
+    }
+    a {
+      color: black;
+      transition: color 300ms ease;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  &__menuicon {
+    display: none;
+    margin-right: 40px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+
+    span {
+      height: 4px;
+      width: 35px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.subheader {
+  height: 200px;
+  background-image: url("https://www.build-review.com/wp-content/uploads/2019/05/Construction-business.png");
+  margin-bottom: 75px;
+}
+
+//Media queries for header component
+@media (max-width: 768px) {
+  .header {
+    &__menu {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      display: flex;
+      margin: 0;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: #eee;
+      transform: translateY(-100%);
+      transition: 500ms;
+
+      &.open {
+        transform: translateY(0%);
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          margin: 10px;
+        }
+      }
+    }
+    &__menuicon {
+      display: flex;
+    }
+    &__topbar {
+      display: none;
+    }
+  }
+}
