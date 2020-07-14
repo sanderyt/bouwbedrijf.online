@@ -62,9 +62,9 @@
 
  }
 
- .footer { height:300px; color:white; background-image:url("https://www.debouwcombinatienc.nl/wp-content/uploads/2019/02/prism.png"); border-top:7px solid #4b84af; }
+ .footer { color:white; padding:75px; background-image:url("https://www.debouwcombinatienc.nl/wp-content/uploads/2019/02/prism.png"); border-top:7px solid #4b84af; }
 
- .footer__menu { display:flex; flex:1; margin:50px; flex-direction:column; }
+ .footer__menu { flex-direction:column; display:flex; }
 
  .footer h2 { font-family:"Montserrat", "Arial", "sans-serif"; font-size:18px; font-weight:bold; }
 
