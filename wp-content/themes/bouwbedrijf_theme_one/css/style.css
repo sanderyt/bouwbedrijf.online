@@ -50,7 +50,13 @@
 
  .header__hamburger { display:flex; flex-direction:column; align-items:center; justify-content:center; background-color:#4b84af; height:100%; width:70px; cursor:pointer; }
 
- .header__hamburger span { height:4px; width:35px; margin-bottom:5px; border-radius:5px; background-color:white; }
+ .header__hamburger span { height:4px; width:35px; margin-bottom:5px; border-radius:5px; background-color:white; transition:all 300ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+ .header__hamburger.open span:nth-child(1) { transform:translateY(8px) rotate(45deg); }
+
+ .header__hamburger.open span:nth-child(2) { opacity:0; }
+
+ .header__hamburger.open span:nth-child(3) { transform:translateY(-10px) rotate(-45deg); }
 
  .subheader { height:200px; background-image:url("https://www.build-review.com/wp-content/uploads/2019/05/Construction-business.png"); margin-bottom:75px; }
 
