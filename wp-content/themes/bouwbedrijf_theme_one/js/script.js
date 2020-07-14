@@ -1,4 +1,4 @@
-const hamburgerIcon = document.querySelector(".header__menuicon");
+const hamburgerIcon = document.querySelector(".header__hamburger");
 const menu = document.querySelector(".header__menu");
 
 const toggleMenu = () => {
