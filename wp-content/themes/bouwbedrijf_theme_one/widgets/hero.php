@@ -80,8 +80,8 @@ class Hero extends Widget_Base{
     ?>
     <div class="hero d-flex justify-content-center align-items-center">
       <div class="hero__overlay"></div>
-      <div class="hero__box">
-        <h1>Hier komt de box</h1>
+      <div class="hero__box d-flex justify-content-center align-items-center">
+        <h1>Bouwbedrijf de Vries</h1>
       </div>
     </div>
     <?php
