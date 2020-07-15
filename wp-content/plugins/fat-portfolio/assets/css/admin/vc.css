@@ -1,0 +1,7 @@
+/** VC Shortcode **/
+.wpb_fat_portfolio .vc_element-icon,
+.wpb-layout-element-button #fat_portfolio .vc_element-icon{
+    background-image: none;
+    color: #0089bd;
+    font-size: 30px;
+}

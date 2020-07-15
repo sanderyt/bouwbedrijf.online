@@ -1,0 +1,1714 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FAT Portfolio\n"
+"POT-Creation-Date: 2017-05-26 08:54+0700\n"
+"PO-Revision-Date: 2017-05-26 08:54+0700\n"
+"Last-Translator: \n"
+"Language-Team: roninwp <kenus.ronin@gmail.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-Basepath: G:\\Projects\\Other\\Plugins\\Portfolio\\svn\\\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_c;esc_html__;esc_html_e;esc_attr__;esc_attr_e;"
+"esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: fat-portfolio\n"
+
+#: fat-portfolio/fat-portfolio.php:127 fat-portfolio/fat-portfolio.php:873
+msgid "FAT Portfolio"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:128
+msgid "FAT Portfolio Description"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:133
+msgid "Parent Item:"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:134
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:135
+msgid "View Item"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:136
+#, php-format
+msgid "Add New  %s"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:137
+msgid "Add New"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:138
+msgid "Edit Item"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:139
+msgid "Update Item"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:140
+msgid "Search Item"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:141
+msgid "Not found"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:142
+msgid "Not found in Trash"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:162
+msgid "Portfolio Tag"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:174
+msgid "Search Tags"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:175
+msgid "Popular Tags"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:176
+msgid "All Tags"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:179
+msgid "Edit Tag"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:180
+msgid "Update Tag"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:181
+msgid "Add New Tag"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:182
+msgid "New Tag Name"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:183
+msgid "Separate tags with commas"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:184
+msgid "Add or remove tags"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:185
+msgid "Choose from the most used tags"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:208 fat-portfolio/fat-portfolio.php:318
+#: fat-portfolio/settings/shortcodes-edit.php:335
+msgid "Categories"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:316
+msgid "Title"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:317
+msgid "Thumbnail"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:319
+msgid "Author"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:320
+msgid "Date"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:359
+msgid "Show All Categories"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:518
+msgid "Inherit from FAT Portfolio Single Setting"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:519 fat-portfolio/settings/settings.php:448
+msgid "Small image slide left"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:520 fat-portfolio/settings/settings.php:453
+msgid "Small image slide right"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:521 fat-portfolio/settings/settings.php:458
+msgid "Big image slide"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:522 fat-portfolio/settings/settings.php:463
+msgid "Big image slide with portfolio content center"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:523
+msgid "Big image slide with portfolio content float"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:524 fat-portfolio/settings/settings.php:473
+msgid "Horizonal image left"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:525 fat-portfolio/settings/settings.php:478
+msgid "Horizonal image right"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:526 fat-portfolio/settings/settings.php:483
+msgid "Image gallery left"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:527 fat-portfolio/settings/settings.php:488
+msgid "Image gallery right"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:528 fat-portfolio/settings/settings.php:493
+msgid "Image gallery top"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:529 fat-portfolio/settings/settings.php:498
+msgid "Image gallery bottom"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:530 fat-portfolio/settings/settings.php:503
+msgid "Small video slide left"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:531 fat-portfolio/settings/settings.php:508
+msgid "Small video slide right"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:532 fat-portfolio/settings/settings.php:513
+msgid "Big video slide"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:533 fat-portfolio/settings/settings.php:518
+msgid "Big video slide with portfolio content"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:537 fat-portfolio/settings/settings.php:524
+msgid "Big image slide with special attribute"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:540
+msgid "Portfolio General"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:546
+msgid "Css class"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:553
+msgid "Link to detail"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:560
+msgid "Single layout"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:571
+msgid "Portfolio Media"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:577
+msgid "Select media type"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:587
+msgid "Select media source"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:603
+msgid "Wordpress Media"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:614
+msgid "Flickr Media"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:624
+msgid "Instagram Media"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:634
+msgid "Video Gallery"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:656
+msgid "Portfolio Attribute"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:662
+msgid "Attribute"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:695 fat-portfolio/fat-portfolio.php:696
+msgid "Shortcodes"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:704 fat-portfolio/fat-portfolio.php:705
+msgid "Add shortcode"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:773
+msgid "Missing shortcode name "
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:778
+msgid "Could not found shortcode with this name"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:813
+msgid "Prev"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:814
+#: fat-portfolio/settings/shortcodes-edit.php:585
+msgid "Next"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:825
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:91
+msgid "All"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:826
+msgid "All Country"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:827
+#: fat-portfolio/settings/shortcodes-edit.php:382
+msgid "All Years"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:828
+#: fat-portfolio/settings/shortcodes-edit.php:397
+#: fat-portfolio/settings/shortcodes-edit.php:412
+msgid "All Type"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:829
+msgid "All Status"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:863
+msgid "Please choice shortcode name"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:874
+msgid "A custom portfolio for your site"
+msgstr ""
+
+#: fat-portfolio/fat-portfolio.php:878
+msgid "Shortcode name"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_file.php:87
+msgid "Choice file"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_file.php:88
+msgid "Delete file"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:61
+msgid "Flickr Filter"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:64
+msgid "Api Key:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:71
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:84
+msgid "User Id:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:75
+msgid "Connect Flickr"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:76
+msgid "Connect success"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:80
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:69
+msgid "Get by:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:82
+msgid "Album"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:83
+msgid "Gallery"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:84
+msgid "Tags "
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:89
+msgid "Media:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:92
+msgid "Photo only"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:93
+msgid "Video only "
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:98
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:77
+#: fat-portfolio/settings/settings.php:158
+msgid "Tag name:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:105
+msgid "Album:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:111
+msgid "Gallery:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:117
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:92
+msgid "Limit (empty for get all):"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:125
+msgid "Media click action:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:127
+msgid "Open flickr post in new window"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:128
+msgid "Open flickr post in same window "
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:129
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:118
+msgid "Open popup image "
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:134
+msgid ""
+"Please click \"Get image\" button after input filter to get media from flickr"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:138
+msgid "Get media"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_flickr.php:143
+msgid "Flickr media"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_font_icon.php:70
+msgid "Choice icon"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_font_icon.php:73
+msgid "Clear icon"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_google_font.php:114
+msgid "Font family"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_google_font.php:117
+msgid "Inherit"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_google_font.php:125
+msgid "Subset"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_google_font.php:131
+msgid "Font weight"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_google_font.php:137
+msgid "Font size"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_google_font.php:143
+msgid "Letter spacing (em)"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_google_font.php:149
+msgid "Line height (em)"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_images.php:79
+msgid "Add image"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:59
+msgid "Instagram Filter"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:62
+msgid "Access token:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:71
+msgid "User"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:72
+msgid "Tagged "
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:100
+msgid "Sort by:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:102
+#: fat-portfolio/settings/shortcodes-edit.php:110
+#: fat-portfolio/settings/shortcodes-edit.php:119
+#: fat-portfolio/settings/shortcodes-edit.php:454
+#: fat-portfolio/settings/shortcodes-edit.php:489
+#: fat-portfolio/settings/shortcodes-edit.php:1086
+#: fat-portfolio/settings/shortcodes-edit.php:1178
+#: fat-portfolio/settings/shortcodes-edit.php:1262
+msgid "None"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:103
+msgid "Newest to oldest"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:104
+msgid "Oldest to newest"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:105
+msgid "Highest # of likes to lowest"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:106
+msgid "Lowest # likes to highest"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:107
+msgid "Highest # of comments to lowest"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:108
+msgid "Lowest # of comments to highest"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:109
+#: fat-portfolio/settings/shortcodes-edit.php:520
+msgid "Random order"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:114
+msgid "Image click action:"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:116
+msgid "Open instagram post in new window"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:117
+msgid "Open instagram post in same window "
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:123
+msgid ""
+"Please click \"Get image\" button after input filter to get image from "
+"instagram"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:127
+msgid "Get image"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_instagram.php:132
+msgid "Instagram images"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_repeat.php:268
+msgid "Add field"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_repeat.php:270
+msgid "Remove all"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/fields/fat_cmb_single_image.php:76
+msgid "Choice image"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/templates/option-page.php:116
+msgid "Options has been saved"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/templates/option-page.php:119
+msgid "Options has been reset"
+msgstr ""
+
+#: fat-portfolio/library/fat-cmb/templates/option-page.php:122
+msgid "Section has been reset"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:12
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:70
+#: fat-portfolio/settings/shortcodes-edit.php:62
+msgid "Thumbnail, icon hover"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:71
+#: fat-portfolio/settings/shortcodes-edit.php:66
+msgid "Thumbnail, icon - title hover"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:72
+#: fat-portfolio/settings/shortcodes-edit.php:58
+msgid "Thumbnail, icon - title - category hover"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:73
+#: fat-portfolio/settings/shortcodes-edit.php:70
+msgid "Thumbnail, icon gallery hover"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:74
+#: fat-portfolio/settings/shortcodes-edit.php:74
+msgid "Image gallery click able"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:75
+#: fat-portfolio/settings/shortcodes-edit.php:78
+msgid "Image to detail click able"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:76
+#: fat-portfolio/settings/shortcodes-edit.php:82
+msgid "Thumbnail, title - category hover"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:77
+#: fat-portfolio/settings/shortcodes-edit.php:91
+msgid "Thumbnail, title - category - center"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:78
+#: fat-portfolio/settings/shortcodes-edit.php:95
+msgid "Thumbnail, title - category - left"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:79
+#: fat-portfolio/settings/shortcodes-edit.php:99
+msgid "Thumbnail, category - title - excerpt"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:80
+#: fat-portfolio/settings/shortcodes-edit.php:103
+msgid "Thumbnail, title - date - excerpt"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:107
+msgid "General Setting"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:112
+msgid "Single Setting"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:117
+msgid "Single Custom CSS"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:124
+msgid "Post type name:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:131
+msgid "Post type slug:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:136
+msgid ""
+"Remember go to Setting -> Permalinks and click Save Change after change Post "
+"type slug to apply change"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:142
+msgid "Category name:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:150
+msgid "Category slug:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:166
+msgid "Tag slug:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:181
+msgid "Country name:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:189
+msgid "Country slug:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:197
+msgid "Years name:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:205
+msgid "Years slug:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:213
+msgid "Type name:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:221
+msgid "Type slug:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:229
+msgid "Status name:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:237
+msgid "Status slug:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:247
+msgid "Archive page:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:250
+msgid "Disable archive page"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:260
+msgid "Archive Tag page:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:263
+msgid "Disable archive tag page"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:274
+msgid "Archive special attribute page:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:277
+msgid "Disable archive attribute page"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:287
+msgid "All country label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:295
+msgid "All years label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:303
+msgid "All type label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:311
+msgid "All status label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:321
+msgid "All category label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:329
+msgid "Title image in popup gallery:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:332
+msgid "Image title"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:333
+msgid "Portfolio/Project title"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:339
+msgid "Enable special attribute"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:347
+msgid "Choice this option to enable Country, Year, Type, Status attribute"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:352
+msgid "Disable view detail:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:362
+msgid "Load script with ajax switch page:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:369
+msgid ""
+"Choice this option to load script when website load in theme what use ajax "
+"switch page"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:375
+msgid "Unload script:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:414
+msgid ""
+"Choice this option to unload some script to resolve duplicate with your theme"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:432
+msgid "Show single page title:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:442
+msgid "Single layout:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:468
+msgid "Big image slide with content float"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:533
+msgid "Big slide image size:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:543
+msgid "The image size for Big slide. Default: 1170 x 700"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:548
+msgid "Small slide image size:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:558
+msgid ""
+"The image size for small slide. Default: 750x450 (Ex: Image gallery slide "
+"left, slide right)"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:563
+msgid "Project info label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:571
+msgid "Project detail label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:579
+msgid "More detail label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:587
+msgid "Category label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:594
+msgid "Related label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:602
+msgid "Show info label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:610
+msgid "Hide info label:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:628
+msgid "Enable link on category:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:638
+msgid "Enable Navigation:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:647
+msgid "Navigation in same category:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:656
+msgid ""
+"If check this then it navigation only apply on portfolio what same category "
+"with current portfolio, else it show all"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:661
+msgid "Enable related portfolio:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:671
+msgid "Related item skin:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:683
+msgid "Display random related:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:692
+msgid "Related portfolio columns:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:700
+msgid "Related portfolio items:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:709
+msgid "Related image size:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:719
+msgid "The image size for thumbnails"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:724
+msgid "Unload:"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:729
+msgid "Unload Header"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:734
+msgid "Unload Footer"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:739
+msgid "Unload Bootstrap Font"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:743
+msgid ""
+"Choice this option to unload header, footer or bootstrap to resolve "
+"duplicate with your theme"
+msgstr ""
+
+#: fat-portfolio/settings/settings.php:759
+#: fat-portfolio/settings/shortcodes-edit.php:1379
+msgid "Custom Css"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:10
+msgid "2 columns"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:11
+msgid "3 columns"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:12
+msgid "4 columns"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:13
+msgid "5 columns"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:14
+msgid "6 columns"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:19
+msgid "Flipster Coverflow"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:23
+msgid "Flipster Carousel"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:27
+msgid "3D Carousel"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:31
+msgid "Carousel"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:35
+msgid "Grid"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:39
+msgid "Masonry"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:43
+msgid "Metro style one"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:47
+msgid "Metro style two"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:51
+msgid "Metro style three"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:86
+msgid "Thumbnail, title - excerpt - hover"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:111
+msgid "5 pixel"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:112
+msgid "10 pixel"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:113
+msgid "15 pixel"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:114
+msgid "20 pixel"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:115
+msgid "30 pixel"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:165
+msgid "FAT portfolio shortcodes generator"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:172
+msgid "Layout"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:177
+msgid "Data source"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:181
+msgid "Filter / Sort"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:186
+msgid "Pagination"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:192
+msgid "Slider config"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:198
+msgid "Skin & Animation"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:205
+msgid "Font & Color"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:211
+msgid "Custom CSS"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:218
+msgid "Shortcode:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:229
+msgid "Shortcode name:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:236
+msgid "Light box gallery:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:239
+msgid "Light box gallery"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:240
+msgid "Magnific popup gallery"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:246
+msgid "Layout:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:269
+msgid "Columns:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:284
+msgid "Gutter:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:299
+msgid "Image size (width x height):"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:310
+msgid "Dynamic crop image:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:321
+#: fat-portfolio/settings/shortcodes-edit.php:466
+#: fat-portfolio/settings/shortcodes-edit.php:531
+#: fat-portfolio/settings/shortcodes-edit.php:703
+#: fat-portfolio/settings/shortcodes-edit.php:885
+#: fat-portfolio/settings/shortcodes-edit.php:958
+#: fat-portfolio/settings/shortcodes-edit.php:1033
+#: fat-portfolio/settings/shortcodes-edit.php:1371
+#: fat-portfolio/settings/shortcodes-edit.php:1390
+msgid "Save"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:331
+msgid "From:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:336
+msgid "List portfolio"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:338
+msgid "Categories and special attribute"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:344
+msgid "Categories:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:349
+msgid "All categories"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:362
+msgid "Country:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:367
+#: fat-portfolio/utils/functions.php:28
+msgid "All country"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:377
+msgid "Years:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:392
+msgid "Type:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:407
+msgid "Status:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:423
+msgid "Select portfolio:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:428
+msgid "All portfolio"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:436
+msgid "Author(s):"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:441
+msgid "All author"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:449
+msgid "Exclude post:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:475
+msgid "Filter type:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:479
+msgid "Isotope"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:480
+msgid "Ajax"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:485
+msgid "Show filter:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:490
+#: fat-portfolio/settings/shortcodes-edit.php:593
+msgid "Center"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:491
+#: fat-portfolio/settings/shortcodes-edit.php:594
+msgid "Left"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:492
+#: fat-portfolio/settings/shortcodes-edit.php:595
+msgid "Right"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:498
+msgid "Order:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:502
+msgid "Ascending"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:503
+msgid "Descending"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:509
+msgid "Order by:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:514
+msgid "By post id"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:515
+msgid "By author"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:516
+msgid "By title"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:518
+msgid "By post name (post slug)"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:519
+msgid "By date"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:522
+msgid "By Page Order (Menu Order)"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:541
+msgid "Paging type:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:545
+msgid "Page Numbers"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:546
+#: fat-portfolio/settings/shortcodes-edit.php:604
+#: fat-portfolio/templates/layouts/load_more.php:17
+msgid "Load more"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:548
+msgid "Infinite scroll"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:549
+msgid "Show all"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:556
+msgid "Item per page:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:565
+#: fat-portfolio/settings/shortcodes-edit.php:713
+#: fat-portfolio/settings/shortcodes-edit.php:893
+msgid "Total items:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:569
+#: fat-portfolio/settings/shortcodes-edit.php:717
+#: fat-portfolio/settings/shortcodes-edit.php:897
+msgid "Set empty for display all"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:574
+msgid "Prev text:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:577
+msgid "Previous"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:582
+msgid "Next text:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:590
+msgid "Position:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:601
+msgid "Load more text:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:609
+msgid "Background active/hover color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:622
+#: fat-portfolio/settings/shortcodes-edit.php:674
+msgid "Text active/hover color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:635
+msgid "Background color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:648
+msgid "Text color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:661
+#: fat-portfolio/settings/shortcodes-edit.php:1356
+msgid "Background hover color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:687
+#: fat-portfolio/settings/shortcodes-edit.php:1343
+msgid "Loading color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:722
+msgid "Desktop large columns:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:730
+msgid "Desktop medium columns:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:734
+#: fat-portfolio/settings/shortcodes-edit.php:745
+#: fat-portfolio/settings/shortcodes-edit.php:756
+#: fat-portfolio/settings/shortcodes-edit.php:767
+#: fat-portfolio/settings/shortcodes-edit.php:778
+msgid "Width:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:741
+msgid "Desktop small columns:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:752
+msgid "Tablet columns:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:763
+msgid "Tablet small columns:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:774
+msgid "Mobile columns:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:785
+msgid "Display dot navigation:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:793
+msgid "Display prev & next navigation:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:801
+msgid "Navigation background color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:813
+msgid "Navigation text color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:826
+msgid "Navigation background hover/active color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:837
+msgid "Navigation text hover color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:850
+#: fat-portfolio/settings/shortcodes-edit.php:902
+msgid "Loop:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:858
+msgid "Auto play:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:865
+#: fat-portfolio/settings/shortcodes-edit.php:910
+msgid "Auto play time:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:869
+msgid "miliseconds"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:874
+msgid "Right to left (RTL):"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:914
+msgid "Set empty or 0 for disable auto play"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:919
+msgid "Pause on hover:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:927
+msgid "Item spacing:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:934
+msgid "Show prev & next :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:942
+msgid "Navigation color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:967
+msgid "Skin:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:989
+msgid "Limit words in excerpt:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:993
+msgid "Input number of words to display excerpt. Set empty to display default"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:999
+msgid "Animation:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1008
+msgid "Preview"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1013
+msgid "Animation duration between items:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1016
+msgid "(minisecond)"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1059
+msgid "Category filter style:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1063
+#: fat-portfolio/settings/shortcodes-edit.php:1073
+#: fat-portfolio/settings/shortcodes-edit.php:1156
+#: fat-portfolio/settings/shortcodes-edit.php:1166
+#: fat-portfolio/settings/shortcodes-edit.php:1238
+#: fat-portfolio/settings/shortcodes-edit.php:1249
+msgid "Normal"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1064
+#: fat-portfolio/settings/shortcodes-edit.php:1157
+#: fat-portfolio/settings/shortcodes-edit.php:1239
+msgid "Italic"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1069
+msgid "Category filter weight:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1074
+#: fat-portfolio/settings/shortcodes-edit.php:1167
+#: fat-portfolio/settings/shortcodes-edit.php:1250
+msgid "Semibold"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1075
+#: fat-portfolio/settings/shortcodes-edit.php:1168
+#: fat-portfolio/settings/shortcodes-edit.php:1251
+msgid "Medium"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1076
+#: fat-portfolio/settings/shortcodes-edit.php:1169
+#: fat-portfolio/settings/shortcodes-edit.php:1252
+msgid "Bold"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1081
+msgid "Category filter text transform:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1087
+#: fat-portfolio/settings/shortcodes-edit.php:1180
+#: fat-portfolio/settings/shortcodes-edit.php:1263
+msgid "Uppercase"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1088
+#: fat-portfolio/settings/shortcodes-edit.php:1182
+#: fat-portfolio/settings/shortcodes-edit.php:1264
+msgid "Lowercase"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1094
+msgid "Category filter letter spacing:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1112
+msgid "Category filter text color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1125
+msgid "Category filter text hover/active color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1137
+msgid "Category font size:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1152
+msgid "Category style:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1162
+msgid "Category style weight:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1174
+msgid "Category text transform:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1188
+msgid "Category letter spacing:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1205
+msgid "Category text color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1218
+msgid "Title font size:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1234
+msgid "Title style:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1245
+msgid "Title style weight:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1258
+msgid "Title text transform:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1270
+msgid "Title letter spacing:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1286
+msgid "Title text color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1299
+msgid "Icon/Excerpt size:"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1316
+msgid "Icon/Excerpt color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes-edit.php:1330
+msgid "Icon hover color :"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes.php:23
+msgid "ID"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes.php:24
+msgid "Name"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes.php:25
+msgid "Shortcode"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes.php:26
+msgid "Actions"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes.php:48 fat-portfolio/settings/tmpl.php:80
+msgid "Edit"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes.php:49
+msgid "Clone"
+msgstr ""
+
+#: fat-portfolio/settings/shortcodes.php:50 fat-portfolio/settings/tmpl.php:81
+msgid "Delete"
+msgstr ""
+
+#: fat-portfolio/templates/items/thumb-cat-title-excerpt.php:62
+msgid "More"
+msgstr ""
+
+#: fat-portfolio/templates/items/thumb-cat-title-excerpt.php:67
+msgid "Share"
+msgstr ""
+
+#: fat-portfolio/templates/layouts/3d-carousel.php:139
+#: fat-portfolio/templates/layouts/carousel.php:175
+#: fat-portfolio/templates/layouts/flipster-carousel.php:138
+#: fat-portfolio/templates/layouts/flipster-coverflow.php:139
+#: fat-portfolio/templates/layouts/grid.php:123
+#: fat-portfolio/templates/layouts/masonry.php:123
+#: fat-portfolio/templates/layouts/metro-style-one.php:164
+#: fat-portfolio/templates/layouts/metro-style-three.php:175
+#: fat-portfolio/templates/layouts/metro-style-two.php:166
+#: fat-portfolio/templates/single/single-related.php:44
+msgid "Could not found skin template"
+msgstr ""
+
+#: fat-portfolio/templates/single/attribute.php:88
+msgid "Country :"
+msgstr ""
+
+#: fat-portfolio/templates/single/attribute.php:95
+msgid "Years :"
+msgstr ""
+
+#: fat-portfolio/templates/single/attribute.php:102
+msgid "Type :"
+msgstr ""
+
+#: fat-portfolio/templates/single/attribute.php:109
+msgid "Status :"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-attr-big-image-slide.php:73
+msgid "Country"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-attr-big-image-slide.php:79
+msgid "Years"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-attr-big-image-slide.php:85
+msgid "Type"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-attr-big-image-slide.php:91
+msgid "Status"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-image-gallery-left.php:46
+msgid "Tag"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-image-gallery-top.php:35
+msgid "Project Info"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-portfolio.php:78
+msgid "Project detail label"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-portfolio.php:79
+msgid "Project info label"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-portfolio.php:80
+msgid "More detail label"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-portfolio.php:81
+msgid "Category"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-portfolio.php:82
+msgid "Related"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-portfolio.php:83
+msgid "Show info"
+msgstr ""
+
+#: fat-portfolio/templates/single/single-portfolio.php:84
+msgid "Hide info"
+msgstr ""
+
+#: fat-portfolio/templates/single/tag.php:14
+msgid "Tags : "
+msgstr ""
+
+#: fat-portfolio/utils/be-ajax.php:21
+msgid "The shortcode name already exist. Please input another shortcode name !"
+msgstr ""
+
+#: fat-portfolio/utils/be-ajax.php:79
+msgid "Cannot find shortcode information !"
+msgstr ""
+
+#: fat-portfolio/utils/functions.php:29
+msgid "All years"
+msgstr ""
+
+#: fat-portfolio/utils/functions.php:30
+msgid "All type"
+msgstr ""
+
+#: fat-portfolio/utils/functions.php:31
+msgid "All status"
+msgstr ""
+
+#: fat-portfolio/utils/functions.php:32
+msgid "All Portfolio"
+msgstr ""
+
+#: fat-portfolio/utils/resize.php:44 fat-portfolio/utils/resize.php:220
+msgid "No image URL has been entered."
+msgstr ""
+
+#: fat-portfolio/utils/resize.php:101 fat-portfolio/utils/resize.php:248
+msgid "Image is BMP. Please use either JPG or PNG."
+msgstr ""

@@ -1,0 +1,716 @@
+.fat-fullwidth{
+    width: 100%;
+}
+.acf-container .wpa_group{
+
+}
+.acf-row{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.acf-row label{
+    display: inline-block;
+    min-width: 120px;
+    vertical-align: top;
+}
+
+.acf-row .button-groups{
+    position: absolute;
+    right: 0px;
+    top:-6px;
+    border: none;
+}
+.acf-row .button-groups a{
+    font-size: 0;
+}
+.acf-row .button-groups a:before{
+    content: "\f158";
+    font-family: 'dashicons';
+    display: inline-block;
+    font-size: 14px;
+}
+
+.acf-col-4,
+.acf-col-6,
+.acf-col-8{
+    padding-right: 15px;
+    float: left;
+    box-sizing: border-box;
+}
+.acf-col-4{
+    width: 33.33%;
+}
+.acf-col-8{
+    width: 66.67%;
+}
+.acf-col-6{
+    width: 50%;
+}
+.acf-col-4 input{
+    width: 60%;
+}
+.acf-col-8 input{
+    width: 70%;
+}
+.page-post-type-setting {
+    background-color: #fff;
+    margin-left: 15px;
+    padding: 20px;
+}
+
+.fat-portfolio-setting {
+    float: left;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.fat-portfolio-setting input[type="text"],
+.fat-portfolio-setting input[type="number"]{
+    padding: 10px;
+    height: 35px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+
+
+.fat-portfolio-tabs ul.tab-settings-nav {
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    margin-top: 30px;
+    padding: 0;
+    max-width: 100%;
+    margin-right: 15px;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    -ms-box-pack: center;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    margin:30px 0 0 0;
+}
+
+.fat-portfolio-tabs ul.tab-settings-nav li {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    text-align: center;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border: 1px solid rgba(40,44,42,.1);
+    background-color: #fff;
+}
+.fat-portfolio-tabs ul.tab-settings-nav li:not(:last-child){
+    border-right: none;
+}
+.fat-portfolio-tabs ul.tab-settings-nav li.active,
+.fat-portfolio-tabs ul.tab-settings-nav li:hover{
+    border-top-color: #2CC185;
+    border-bottom: none;
+    border-top-width: 3px;
+}
+
+.fat-portfolio-tabs ul.tab-settings-nav li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    color: #46403c;
+    font-weight: 700;
+    outline: none;
+    -moz-outline: none;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+.fat-portfolio-tabs ul.tab-settings-nav li a > span{
+    display: block;
+}
+.fat-portfolio-tabs ul.tab-settings-nav li a:focus,
+.fat-portfolio-tabs ul.tab-settings-nav li a:visited,
+.fat-portfolio-tabs ul.tab-settings-nav li a:link:focus,
+.fat-portfolio-tabs ul.tab-settings-nav li a:visited:focus{
+    outline: none;
+    -moz-outline: none;
+}
+.fat-portfolio-setting input:not([type=checkbox]) {
+    min-width: 300px;
+}
+.fat-portfolio-tabs ul.tab-settings-nav li a i{
+    font-size: 16px;
+}
+.fat-portfolio-tabs ul.tab-settings-nav li.active a,
+.fat-portfolio-tabs ul.tab-settings-nav li a:hover{
+  color:  #2CC185;
+}
+
+
+.fat-portfolio-tabs .tab-setting {
+    display: none;
+    float: left;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border:1px solid rgba(40,44,42,.1);
+    border-top: none;
+    padding-top: 30px;
+}
+
+.fat-portfolio-tabs .tab-setting.active {
+    display: block;
+}
+
+.fat-portfolio-tabs .tab-setting ul,
+.fat-portfolio-tabs .tab-setting ul li {
+    float: left;
+    width: 100%;
+}
+
+.fat-portfolio-setting .field-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: solid 1px #eee;
+    margin-bottom: 0;
+}
+.fat-portfolio-setting .field-group:first-child{
+    border-top: none;
+}
+
+.fat-portfolio-setting .tab-setting li div.fat-title {
+    width: 15%;
+    min-width: 150px;
+    float: left;
+    line-height: 28px;
+}
+
+.fat-portfolio-setting .tab-setting li div.fat-field {
+    width: 85%;
+    float: left;
+}
+
+.fat-portfolio-setting .tab-setting li div.fat-desc {
+    width: 85%;
+    float: left;
+    padding-left: 200px;
+}
+
+.fat-portfolio-setting input[type="textbox"] {
+    min-width: 300px;
+}
+
+.fat-portfolio-setting .description {
+    font-style: italic;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.fat-portfolio-setting input.number {
+    min-width: 60px;
+    width: 92px;
+}
+
+.fat-portfolio-setting select {
+    min-width: 200px;
+}
+
+.fat-portfolio-setting textarea.custom-css {
+    width: 100%;
+    height: 300px;
+}
+
+.ranger-slider-container .ranger-slider {
+    width: 300px;
+    display: inline-block;
+}
+
+.ranger-slider-container input {
+    width: 60px !important;
+    min-width: 60px !important;
+}
+
+.ranger-slider-container .rangeslider--horizontal .rangeslider__handle {
+    width: 20px !important;
+    height: 20px !important;
+    top: -6px !important;
+}
+
+.ranger-slider-container .rangeslider--horizontal {
+    height: 10px !important;
+}
+
+.ranger-slider-container .rangeslider__handle:after {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #00ff00;
+}
+
+.colorpicker-element .input-group-addon i {
+    border: solid 1px #ccc;
+}
+
+.color-picker-wrap .input-group {
+    border-collapse: separate;
+    display: table;
+    position: relative;
+}
+
+.color-picker-wrap .input-group-addon,
+.color-picker-wrap .input-group-btn,
+.color-picker-wrap .input-group .form-control {
+    display: table-cell;
+}
+
+.color-picker-wrap .input-group-addon:not(:first-child):not(:last-child),
+.color-picker-wrap .input-group-btn:not(:first-child):not(:last-child),
+.color-picker-wrap .input-group .form-control:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+
+.color-picker-wrap .input-group-addon,
+.color-picker-wrap .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.color-picker-wrap .input-group-addon {
+    padding: 0px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.color-picker-wrap .input-group input[type="text"] {
+    width: 100%;
+}
+
+.color-picker-wrap .input-group-addon:first-child {
+    border-right: 0;
+}
+
+.color-picker-wrap .input-group .form-control:last-child,
+.color-picker-wrap .input-group-addon:last-child
+{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.color-picker-wrap .input-group-addon:last-child {
+    border-left: 0;
+}
+
+.colorpicker.dropdown-menu {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    float: left;
+    font-size: 14px;
+    left: 0;
+    list-style: outside none none;
+    margin: 2px 0 0;
+    min-width: 160px;
+    padding: 5px 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    z-index: 1000;
+}
+
+.fat-portfolio-setting .tab-setting .select2-selection ul li{
+    width: auto;
+}
+.fat-portfolio-setting .tab-setting .select2-container span.select2-selection--multiple{
+    display: inline-block;
+}
+.fat-portfolio-setting .dependence-element{
+    display: none;
+}
+
+pre.ace-editor{
+    border:solid 1px #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    height: 300px;
+}
+
+/** shortcode page **/
+
+.fat-portfolio-list-shortcode thead{
+    font-weight: 500;
+    font-size: 14px;
+}
+.fat-portfolio-list-shortcode td{
+    padding: 15px;
+    font-size: 14px;
+    border-bottom: solid 1px #ddd;
+}
+
+.fat-portfolio-list-shortcode a,
+.fat-shortcode-edit-wrap a{
+    color: #343434;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: none;
+    outline: none;
+}
+
+.fat-portfolio-list-shortcode .actions-group a i,
+.preview-animation i {
+    margin-right: 5px;
+}
+
+.fat-shortcode-edit-wrap .preview-animation{
+    position: relative;
+    display: inline-block;
+    top:-15px;
+}
+.fat-shortcode-edit-wrap .animation-wrap{
+    display: inline-block;
+}
+.fat-shortcode-edit-wrap .animation-wrap img{
+    max-width: 300px;
+}
+
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item{
+    box-sizing: border-box;
+    float: left;
+    padding: 5px;
+    cursor: pointer;
+}
+.fat-shortcode-edit-wrap .fat-image-wrap.col-4 .image-item{
+    width: 25%;
+}
+.fat-shortcode-edit-wrap .fat-image-wrap.col-5 .image-item{
+    width: 20%;
+}
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item .image-item-inner{
+    position: relative;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-transform: all 0.3s;
+    -moz-transform: all 0.3s;
+    -ms-transform: all 0.3s;
+    -o-transform: all 0.3s;
+    transform: all 0.3s;
+    padding: 15px;
+}
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item .image-item-inner a{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    -webkit-transform: all 0.3s;
+    -moz-transform: all 0.3s;
+    -ms-transform: all 0.3s;
+    -o-transform: all 0.3s;
+    transform: all 0.3s;
+}
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item.active .image-item-inner a,
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item:hover .image-item-inner a{
+    opacity: 1;
+}
+
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item.active .image-item-inner,
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item:hover .image-item-inner{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item .image-item-inner,
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item .image-item-inner a,
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item .image-item-inner img{
+    pointer-events: none;
+}
+
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item img{
+    width: 100%;
+}
+
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item .layout-title,
+.fat-shortcode-edit-wrap .fat-image-wrap .image-item .skin-title{
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.fat-shortcode-edit-wrap .fat-image-wrap.col-4 .image-item:nth-child(4n+1){
+    clear: both;
+}
+
+.fat-shortcode-edit-wrap .fat-image-wrap.col-5 .image-item:nth-child(5n+1){
+    clear: both;
+}
+
+.field-hidden{
+    display: none;
+}
+
+.field-width-100 input{
+    width: 100px !important;
+    min-width: 100px !important;
+}
+.field-width-125 input{
+    width: 125px !important;
+    min-width: 125px !important;
+}
+.field-width-140 input{
+    width: 140px !important;
+    min-width: 140px !important;
+}
+
+/** selectize **/
+
+div.selectize-control{
+    width: 300px;
+    display: inline-block;
+}
+
+.fat-portfolio-setting .selectize-control input{
+    padding: 0px;
+    height: 20px;
+    min-width: 0px;
+}
+
+
+/** dialog popup **/
+
+
+.bg-processing,
+.bg-alert-popup,
+.bg-popup-skins,
+.bg-popup-change-height{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99999;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.bg-processing .loading,
+.bg-alert-popup .content-popup{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+    font-size: 16px;
+    padding: 20px 30px;
+    background: rgba(0,0,0,0.9);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.bg-processing .loading i,
+.bg-alert-popup .content-popup i{
+    margin-right: 10px;
+}
+.bg-alert-popup .content-popup{
+    padding: 30px 60px;
+}
+.bg-alert-popup .btn-group{
+    text-align: center;
+    margin-top: 15px;
+}
+.bg-alert-popup .btn-group a{
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 14px;
+    border: solid 1px #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.bg-popup-change-height .content-popup{
+    background-color: #fff;
+    padding:20px 30px;
+}
+.bg-popup-change-height .content-popup label{
+    width: 100px;
+    display: inline-block;
+}
+.bg-popup-change-height .content-popup input{
+    width: 150px;
+}
+.bg-popup-change-height .content-popup a#apply_change_height{
+    text-decoration: none;
+    padding-left: 105px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.bg-popup-skins .grid-plus-container,
+.bg-popup-change-height .content-popup{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: inline-block;
+}
+.bg-popup-skins .grid-plus-layout{
+    position: relative;
+    width: 1170px;
+    height: 500px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+a.close-popup{
+    position: absolute;
+    right: -25px;
+    top: -20px;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+}
+a.close-popup:hover,
+a.close-popup:focus{
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+.ui-dialog.ui-widget{
+    background-color: #343434;
+    z-index: 99999;
+    padding: 10px 15px 15px 15px;
+}
+
+
+.fat-portfolio_page_fat_portfolio_shortcode_edit .ui-draggable .ui-dialog-titlebar,
+.fat-portfolio_page_fat-portfolio-settings .ui-draggable .ui-dialog-titlebar,
+.fat-portfolio_page_fat_portfolio_shortcode_edit .ui-dialog-buttonpane,
+.fat-portfolio_page_fat-portfolio-settings .ui-dialog-buttonpane{
+    background-color: #343434;
+    line-height: 1.4em;
+    border: none;
+    height: auto;
+    font-size: 14px;
+    padding: 0;
+}
+
+.fat-portfolio_page_fat_portfolio_shortcode_edit .ui-dialog-content,
+.fat-portfolio_page_fat-portfolio-settings .ui-dialog-content{
+    padding: 0;
+}
+.fat-portfolio_page_fat_portfolio_shortcode_edit .ui-dialog-buttonpane .ui-dialog-buttonset,
+.fat-portfolio_page_fat-portfolio-settings .ui-dialog-buttonpane .ui-dialog-buttonset{
+    float: none;
+}
+.fat-portfolio_page_fat_portfolio_shortcode_edit .ui-dialog-buttonpane .ui-dialog-buttonset button,
+.fat-portfolio_page_fat-portfolio-settings .ui-dialog-buttonpane .ui-dialog-buttonset button{
+    line-height: normal;
+}
+
+.fat-portfolio_page_fat_portfolio_shortcode_edit .ui-button.ui-dialog-titlebar-close,
+.fat-portfolio_page_fat-portfolio-settings .ui-button.ui-dialog-titlebar-close
+{
+    color: #fff;
+}
+
+.ui-widget-overlay.ui-front{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+.ui-dialog .ui-dialog-titlebar button{
+    position: absolute;
+    right: 2px;
+    background: none;
+    border: none;
+    top: 4px;
+    font-size: 16px;
+    outline: none;
+}
+.ui-dialog .ui-dialog-titlebar button .ui-button-text{
+    display: none;
+}
+.ui-dialog .ui-dialog-titlebar button .ui-icon-closethick:before{
+    content: "\f05c";
+    font-family: FontAwesome;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.ui-dialog .ui-dialog-content{
+    min-height: 0px !important;
+}
+.ui-dialog .content-popup .message{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.ui-dialog .content-popup .message i{
+    margin-right: 15px;
+}
+.ui-dialog .ui-dialog-buttonpane{
+    text-align: center;
+}
+.ui-dialog .ui-dialog-buttonpane button{
+    background: none;
+    border: solid 1px #fff;
+    color: #fff;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-right: 2px;
+    margin-left: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius:2px;
+}
+.ui-dialog .ui-dialog-buttonpane button:focus{
+    outline: none;
+}
+.ui-dialog .ui-dialog-buttonpane button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
