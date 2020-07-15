@@ -78,11 +78,11 @@ class Hero extends Widget_Base{
     );
 
     ?>
-    <div class="service-card">
-         <?php echo $settings['content_heading'] ?>
-            <div class="service-card__title">
-                <?php echo $settings['label_heading'] ?>
-            </div>
+    <div class="hero d-flex justify-content-center align-items-center">
+      <div class="hero__overlay"></div>
+      <div class="hero__box">
+        <h1>Hier komt de box</h1>
+      </div>
     </div>
     <?php
   }

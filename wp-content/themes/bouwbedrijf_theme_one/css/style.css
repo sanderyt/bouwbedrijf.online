@@ -120,5 +120,19 @@
 
  .footer h2 { font-family:"Montserrat", "Arial", "sans-serif"; font-size:18px; font-weight:bold; }
 
- .service-card { background-color:red; }
+ .advertisement__label-heading { padding:0.5rem 1.25rem; background-color:red; color:#fff; width:100%; font-weight:800; font-size:1.5rem; border-top-left-radius:0.75rem; border-top-right-radius:0.75rem; }
+
+ .advertisement__content__heading { font-weight:500; font-size:2.5rem; margin-bottom:1.25rem; }
+
+ .advertisement__content { padding:1rem; background-color:#fff; color:#6d6d6d; font-size:2rem; }
+
+ .service-card { background-color:navy; }
+
+ .service-card__title { color:white; }
+
+ .hero { height:100vh; background-image:url("https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); position:relative; }
+
+ .hero__overlay { position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.4); }
+
+ .hero__box { background-color:rgba(0, 0, 0, 0.6); height:200px; width:700px; animation:fadeIn 500ms forwards; }
 

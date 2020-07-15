@@ -112,6 +112,7 @@ class Advertisement extends Widget_Base{
         <div class="advertisement__content__copy">
           {{{ settings.content }}}
         </div>
+        <div>Hi</div>
       </div>
     </div>
         <?php

@@ -6,10 +6,8 @@
   <meta name="author" content="">
 
   <title>Bouwbedrijf thema one</title>
-  <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-grid.min.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri(); ?>/css/all.min.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
   <?php wp_head();?>
 </head>
 
