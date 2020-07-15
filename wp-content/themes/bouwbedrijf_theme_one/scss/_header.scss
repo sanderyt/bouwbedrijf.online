@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   background-color: white;
   box-shadow: $box-shadow-setting;
   &__topbar {
@@ -46,6 +46,7 @@
   }
   &__menu {
     display: flex;
+    position: relative;
     flex: 1.5;
     height: 75px;
     margin-right: 100px;
@@ -124,34 +125,44 @@
   margin-bottom: 75px;
 }
 
+.mobilemenu {
+  display: none;
+}
+
 //Media queries for header component
 @media (max-width: 768px) {
-  .header {
-    &__menu {
-      position: absolute;
-      z-index: -1;
-      top: 0;
+  .mobilemenu {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: none;
+    padding-top: 90px;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+    background-color: #eee;
+    animation: slideDown 400ms forwards;
+
+    &.open {
       display: flex;
-      margin: 0;
-      justify-content: center;
-      height: 100vh;
-      width: 100vw;
-      background-color: #eee;
-      transform: translateY(-100%);
-      transition: 500ms;
+    }
 
-      &.open {
-        transform: translateY(0%);
-      }
-
+    &__list {
       ul {
         display: flex;
         flex-direction: column;
+        list-style: none;
 
         li {
-          margin: 10px;
+          margin: 15px;
         }
       }
+    }
+  }
+  .header {
+    &__menu {
+      display: none;
     }
     &__menuicon {
       display: flex;

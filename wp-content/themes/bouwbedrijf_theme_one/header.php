@@ -16,7 +16,7 @@
 <body>
 <header>
       <div class="header container-fluid">
-        <div class="header__topbar row d-none d-md-flex">
+        <div class="header__topbar row d-none d-lg-flex">
           <ul>
             <li><?php echo get_theme_mod('business_phone')?></li>
             <li><?php echo get_theme_mod('business_email')?></li>
@@ -30,7 +30,7 @@
           <?php
 				  wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header__menu' ) );
 		    ?>
-          <div class="header__mobile d-flex d-md-none">
+          <div class="header__mobile d-flex d-lg-none">
             <div class="header__icons">
             <a href="tel:<?php echo get_theme_mod('business_phone')?>"><i class="fas fa-phone"></i></a>
               <a href="mailto:<?php echo get_theme_mod('business_email')?>"><i class="fas fa-envelope"></i></A>
@@ -42,5 +42,8 @@
             </div>
           </div>         
         </div>
+      </div>
+      <div class="mobilemenu">          
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'mobilemenu__list' ) ); ?>
       </div>
     </header>    

@@ -1,5 +1,5 @@
 const hamburgerIcon = document.querySelector(".header__hamburger");
-const menu = document.querySelector(".header__menu");
+const menu = document.querySelector(".mobilemenu");
 
 const toggleMenu = () => {
   menu.classList.toggle("open");
