@@ -7,6 +7,15 @@
     flex-direction: column;
     display: flex;
   }
+  &__bottom {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #202020;
+    color: #ccc;
+    font-size: 0.6rem;
+  }
   & h2 {
     font-family: $heading-font;
     font-size: $h3-font-size;

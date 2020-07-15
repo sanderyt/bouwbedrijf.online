@@ -17,7 +17,12 @@
       <h2>Projecten</h2>
       <?php wp_nav_menu( array( 'theme_location' => 'footer-menu2', 'container_class' => 'footermenu' ) ); ?>
       </div>
-    </div>
+      </div>
+      <div class="footer__bottom row">
+            <div class="col d-flex justify-content-center">
+                  <span>Deze website is gerealiseerd door <a href="http://www.bouwbedrijf.online" class="link--primary" target="_blank">bouwbedrijf.online</a></span>
+            </div>
+      </div>
     </div>
     </footer>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
