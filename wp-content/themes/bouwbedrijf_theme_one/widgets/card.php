@@ -8,22 +8,22 @@ use Elementor\Controls_Manager;
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 
-class Advertisement extends Widget_Base{
+class Card extends Widget_Base{
 
   public function get_name(){
-    return 'advertisement';
+    return 'card';
   }
 
   public function get_title(){
-    return 'Advertisement';
+    return 'Service Card';
   }
 
   public function get_icon(){
-    return 'fa fa-camera';
+    return 'fa fa-tools';
   }
 
   public function get_categories(){
-    return ['general'];
+    return ['basic'];
   }
 
   protected function _register_controls(){
@@ -78,42 +78,9 @@ class Advertisement extends Widget_Base{
     );
 
     ?>
-    <div class="advertisement">
-      <div <?php echo $this->get_render_attribute_string('label_heading'); ?>>
-        <?php echo $settings['label_heading']?>
-      </div>
-      <div class="advertisement__content">
-        <div class="advertisement__content__heading" <?php echo $this->get_render_attribute_string('content_heading'); ?>>
-          <?php echo $settings['content_heading'] ?>
-        </div>
-        <div class="advertisement__content__copy" <?php echo $this->get_render_attribute_string('content'); ?>>
-          <?php echo $settings['content'] ?>
-        </div>
-      </div>
+    <div class="service-card">
+         <?php echo $settings['content_heading'] ?>
     </div>
     <?php
-  }
-
-  protected function _content_template(){
-    ?>
-    <#
-        view.addInlineEditingAttributes( 'label_heading', 'basic' );
-    view.addRenderAttribute(
-        'label_heading',
-        {
-            'class': [ 'advertisement__label-heading' ],
-        }
-    );
-        #>
-        <div class="advertisement">
-      <div {{{ view.getRenderAttributeString( 'label_heading' ) }}}>{{{ settings.label_heading }}}</div>
-      <div class="advertisement__content">
-        <div class="advertisement__content__heading">{{{ settings.content_heading }}}</div>
-        <div class="advertisement__content__copy">
-          {{{ settings.content }}}
-        </div>
-      </div>
-    </div>
-        <?php
   }
 }

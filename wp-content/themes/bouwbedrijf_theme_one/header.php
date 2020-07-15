@@ -25,7 +25,9 @@
         </div>
         <div class="header__main row">
           <div class="header__logo">
-          <img src="<?php echo esc_url( get_theme_mod( 'logo' ) ); ?>" alt="logo" />
+          <a href="/">
+            <img src="<?php echo esc_url( get_theme_mod( 'logo' ) ); ?>" alt="logo" />
+          </a>
           </div>
           <?php
 				  wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header__menu' ) );

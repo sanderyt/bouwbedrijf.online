@@ -6,6 +6,20 @@
   &__menu {
     flex-direction: column;
     display: flex;
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 2px 0;
+
+        .fas {
+          font-size: 1.35rem;
+          margin-right: 10px;
+          color: $primary-color;
+        }
+      }
+    }
   }
   &__bottom {
     height: 25px;
@@ -20,8 +34,5 @@
     font-family: $heading-font;
     font-size: $h3-font-size;
     font-weight: bold;
-  }
-  & ul {
-    list-style: none;
   }
 }

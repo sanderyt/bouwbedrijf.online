@@ -87,6 +87,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .fas {
+      font-size: 1.75rem;
+      padding: 15px;
+      color: $primary-color;
+    }
   }
 
   &__hamburger {

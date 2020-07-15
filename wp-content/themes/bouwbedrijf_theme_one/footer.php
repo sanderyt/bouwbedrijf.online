@@ -1,12 +1,12 @@
 <footer>
-<div class="container-fluid">
+<div class="container">
 <div class="footer row">
       <div class="footer__menu col-md-4">
-      <h2>Contact opnemen?</h2>
+      <h2>Contact opnemen</h2>
       <ul>
-      <li><?php echo get_theme_mod('business_phone')?></li>
-            <li><?php echo get_theme_mod('business_email')?></li>
-            <li><?php echo get_theme_mod('business_street')?>, <?php echo get_theme_mod('business_postalcode')?>, <?php echo get_theme_mod('business_residence')?></li>
+      <li><i class="fas fa-phone"></i><?php echo get_theme_mod('business_phone')?></li><br>
+      <li><i class="fas fa-envelope"></i><?php echo get_theme_mod('business_email')?></li><br>
+      <li><i class="fas fa-home"></i><?php echo get_theme_mod('business_street')?>, <?php echo get_theme_mod('business_postalcode')?>, <?php echo get_theme_mod('business_residence')?></li><br>
       </ul>
       </div>
       <div class="footer__menu col-md-4">
