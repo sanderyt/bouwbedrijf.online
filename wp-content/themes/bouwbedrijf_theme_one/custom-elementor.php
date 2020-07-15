@@ -18,6 +18,7 @@ class Widget_Loader{
   private function include_widgets_files(){
     require_once(__DIR__ . '/widgets/advertisement.php');
     require_once(__DIR__ . '/widgets/card.php');
+    require_once(__DIR__ . '/widgets/hero.php');
   }
 
   public function register_widgets(){
@@ -26,6 +27,7 @@ class Widget_Loader{
 
     \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Advertisement());
     \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Card());
+    \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Hero());
 
   }
 

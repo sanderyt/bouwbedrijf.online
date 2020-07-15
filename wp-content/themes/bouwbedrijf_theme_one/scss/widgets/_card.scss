@@ -1,3 +1,6 @@
 .service-card {
   background-color: navy;
+  &__title {
+    color: white;
+  }
 }

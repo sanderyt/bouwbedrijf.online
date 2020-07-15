@@ -8,18 +8,18 @@ use Elementor\Controls_Manager;
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 
-class Card extends Widget_Base{
+class Hero extends Widget_Base{
 
   public function get_name(){
-    return 'card';
+    return 'hero';
   }
 
   public function get_title(){
-    return 'Service Card';
+    return 'Hero';
   }
 
   public function get_icon(){
-    return 'fa fa-tools';
+    return 'fa fa-images';
   }
 
   public function get_categories(){
