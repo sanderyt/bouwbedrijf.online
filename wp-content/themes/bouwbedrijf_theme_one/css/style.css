@@ -52,6 +52,10 @@
 
  .header__logo img { height:75px; width:150px; }
 
+ @media (max-width:768px) { .header__logo img { height:50px; width:100px; }
+
+ }
+
  .header__menu { display:flex; position:relative; flex:1.5; height:75px; margin-right:100px; justify-content:flex-end; align-items:center; }
 
  .header__menu ul { display:flex; justify-content:center; align-items:center; }
@@ -80,7 +84,7 @@
 
  .mobilemenu { display:none; }
 
- @media (max-width:768px) { .mobilemenu { position:fixed; z-index:2; display:flex; top:0; padding-top:90px; margin:0; height:100vh; justify-content:center; width:100vw; background-color:#eee; transform:translateY(-100%); transition:400ms; }
+ @media (max-width:992px) { .mobilemenu { position:fixed; z-index:2; display:flex; top:0; padding-top:90px; margin:0; height:100vh; justify-content:center; width:100vw; background-color:#eee; transform:translateY(-100%); transition:400ms; }
 
  .mobilemenu.open { transform:translateY(0%); }
 

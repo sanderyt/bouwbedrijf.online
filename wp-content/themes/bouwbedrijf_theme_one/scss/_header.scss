@@ -42,6 +42,11 @@
     img {
       height: 75px;
       width: 150px;
+
+      @media (max-width: 768px) {
+        height: 50px;
+        width: 100px;
+      }
     }
   }
   &__menu {
@@ -130,7 +135,7 @@
 }
 
 //Media queries for header component
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .mobilemenu {
     position: fixed;
     z-index: 2;
