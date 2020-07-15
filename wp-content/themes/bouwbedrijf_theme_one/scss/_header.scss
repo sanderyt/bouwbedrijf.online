@@ -134,18 +134,19 @@
   .mobilemenu {
     position: fixed;
     z-index: 2;
+    display: flex;
     top: 0;
-    display: none;
     padding-top: 90px;
     margin: 0;
     height: 100vh;
     justify-content: center;
     width: 100vw;
     background-color: #eee;
-    animation: slideDown 400ms forwards;
+    transform: translateY(-100%);
+    transition: 400ms;
 
     &.open {
-      display: flex;
+      transform: translateY(0%);
     }
 
     &__list {
@@ -156,6 +157,19 @@
 
         li {
           margin: 15px;
+          transform: translateX(-100%);
+          transition: 500ms;
+          transition-delay: 300ms;
+          opacity: 0;
+        }
+      }
+
+      &.open {
+        ul {
+          li {
+            transform: translateX(0%);
+            opacity: 1;
+          }
         }
       }
     }

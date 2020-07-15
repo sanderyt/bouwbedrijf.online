@@ -80,13 +80,15 @@
 
  .mobilemenu { display:none; }
 
- @media (max-width:768px) { .mobilemenu { position:fixed; z-index:2; top:0; display:none; padding-top:90px; margin:0; height:100vh; justify-content:center; width:100vw; background-color:#eee; animation:slideDown 400ms forwards; }
+ @media (max-width:768px) { .mobilemenu { position:fixed; z-index:2; display:flex; top:0; padding-top:90px; margin:0; height:100vh; justify-content:center; width:100vw; background-color:#eee; transform:translateY(-100%); transition:400ms; }
 
- .mobilemenu.open { display:flex; }
+ .mobilemenu.open { transform:translateY(0%); }
 
  .mobilemenu__list ul { display:flex; flex-direction:column; list-style:none; }
 
- .mobilemenu__list ul li { margin:15px; }
+ .mobilemenu__list ul li { margin:15px; transform:translateX(-100%); transition:500ms; transition-delay:300ms; opacity:0; }
+
+ .mobilemenu__list.open ul li { transform:translateX(0%); opacity:1; }
 
  .header__menu { display:none; }
 
