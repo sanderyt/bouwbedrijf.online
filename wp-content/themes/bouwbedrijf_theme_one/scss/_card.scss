@@ -1,6 +1,16 @@
 .service-card {
-  background-color: navy;
-  &__title {
-    color: white;
+  box-shadow: $box-shadow-setting;
+  border-radius: $border-radius-button;
+  height: 250px;
+  transition: 250ms;
+  background-color: white;
+  cursor: pointer;
+
+  &__thumb {
+    width: 100%;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px #bbb;
   }
 }

@@ -13,7 +13,7 @@ a {
 }
 
 main {
-  padding: 105px 0;
+  padding-top: 105px;
   background-color: #f7f7f7;
 
   @media (max-width: 768px) {
@@ -26,4 +26,9 @@ h2,
 h3,
 h4 {
   color: $primary-color;
+}
+
+p,
+li {
+  line-height: 1.5;
 }

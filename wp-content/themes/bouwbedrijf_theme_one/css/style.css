@@ -2,13 +2,15 @@
 
  a { text-decoration:none; color:inherit; }
 
- main { padding:105px 0; background-color:#f7f7f7; }
+ main { padding-top:105px; background-color:#f7f7f7; }
 
  @media (max-width:768px) { main { padding:75px 0; }
 
  }
 
  h1,h2,h3,h4 { color:#4b84af; }
+
+ p,li { line-height:1.5; }
 
  .btn { padding:20px; color:white; margin:0 15px; height:40px; display:flex; align-items:center; justify-content:center; border-radius:5px; }
 
@@ -132,9 +134,11 @@
 
  .advertisement__content { padding:1rem; background-color:#fff; color:#6d6d6d; font-size:2rem; }
 
- .service-card { background-color:navy; }
+ .service-card { box-shadow:0px 0px 10px #ccc; border-radius:5px; height:250px; transition:250ms; background-color:white; cursor:pointer; }
 
- .service-card__title { color:white; }
+ .service-card__thumb { width:100%; }
+
+ .service-card:hover { box-shadow:0 0 10px #bbb; }
 
  .hero { height:100vh; background-image:url("https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); position:relative; margin-top:-105px; }
 

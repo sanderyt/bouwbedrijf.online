@@ -79,10 +79,12 @@ class Card extends Widget_Base{
 
     ?>
     <div class="service-card">
-         <?php echo $settings['content_heading'] ?>
-            <div class="service-card__title">
-                <?php echo $settings['label_heading'] ?>
-            </div>
+      <div class="service-card__thumb">
+        <img src="https://www.debouwcombinatienc.nl/wp-content/uploads/2018/12/aanbouw.jpg" />
+      </div>
+      <div class="service-card__title d-flex justify-content-center align-items-center">
+        <h3><?php echo $settings['label_heading'] ?></h3>
+      </div>
     </div>
     <?php
   }

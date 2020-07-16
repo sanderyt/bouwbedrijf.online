@@ -1,3 +1,4 @@
+//Theme basics
 @import "./variables";
 @import "./base";
 @import "./buttons";
@@ -5,9 +6,11 @@
 @import "./animations";
 @import "./typography";
 
+//Theme components
 @import "./header";
 @import "./footer";
 
+//Custom widgets
 @import "./advertisement";
 @import "./card";
 @import "./hero";
