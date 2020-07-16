@@ -132,8 +132,21 @@
 
 .subheader {
   height: 200px;
-  background-image: url("https://www.build-review.com/wp-content/uploads/2019/05/Construction-business.png");
+  background-image: url("https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   margin-bottom: 75px;
+  position: relative;
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+  }
+
+  h1 {
+    color: white;
+  }
 }
 
 .mobilemenu {

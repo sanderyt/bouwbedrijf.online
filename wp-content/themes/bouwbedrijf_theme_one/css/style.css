@@ -92,7 +92,11 @@
 
  .header__hamburger.open span:nth-child(3) { transform:translateY(-10px) rotate(-45deg); }
 
- .subheader { height:200px; background-image:url("https://www.build-review.com/wp-content/uploads/2019/05/Construction-business.png"); margin-bottom:75px; }
+ .subheader { height:200px; background-image:url("https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); margin-bottom:75px; position:relative; }
+
+ .subheader__overlay { position:absolute; top:0; background-color:rgba(0, 0, 0, 0.5); height:100%; width:100%; }
+
+ .subheader h1 { color:white; }
 
  .mobilemenu { display:none; }
 
@@ -134,7 +138,7 @@
 
  .advertisement__content { padding:1rem; background-color:#fff; color:#6d6d6d; font-size:2rem; }
 
- .service-card { box-shadow:0px 0px 10px #ccc; border-radius:5px; height:250px; transition:250ms; background-color:white; cursor:pointer; }
+ .service-card { box-shadow:0px 0px 10px #ccc; border-radius:5px; height:250px; transition:250ms; background-color:white; cursor:pointer; margin:30px; }
 
  .service-card__thumb { width:100%; }
 
