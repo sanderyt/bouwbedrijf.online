@@ -118,7 +118,7 @@
 
  }
 
- .footer { color:white; padding:75px; background-image:url("https://www.debouwcombinatienc.nl/wp-content/uploads/2019/02/prism.png"); border-top:7px solid #4b84af; }
+ .footer { color:white; padding:20px; background-image:url("https://www.debouwcombinatienc.nl/wp-content/uploads/2019/02/prism.png"); border-top:7px solid #4b84af; }
 
  .footer__menu { flex-direction:column; display:flex; }
 
