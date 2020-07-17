@@ -8,17 +8,21 @@
 
  }
 
- h1,h2,h3,h4 { color:#75a582; }
+ h1,h2,h3,h4 { color:#26607f; }
 
  p,li { line-height:1.5; }
 
- .btn { padding:20px; color:white; margin:0 15px; height:40px; display:flex; align-items:center; justify-content:center; border-radius:5px; }
+ .btn { padding:20px; margin:0 15px; height:40px; display:flex; align-items:center; justify-content:center; border-radius:5px; transition:250ms; }
 
- .btn--cta { background-color:#fcb842; }
+ .btn--cta { background-color:#3be25f; }
 
- .btn a { color:white; }
+ .btn--cta a { color:white !important; }
 
- .elementor-button { background-color:red; }
+ .btn--cta:hover { background-color:#1ecc44; }
+
+ .elementor-12 .elementor-element.elementor-element-ddd63e7 .elementor-button { background-color:#26607f; transition:250ms; }
+
+ .elementor-12 .elementor-element.elementor-element-ddd63e7 .elementor-button:hover { background-color:#1a4258; }
 
  .wpcf7-form-control { height:50px; border:1px solid black; }
 
@@ -46,13 +50,13 @@
 
  }
 
- .link--primary { transition:400ms; color:#75a582; }
+ .link--primary { transition:400ms; color:#26607f; }
 
- .link--primary:hover { color:#94b99e; }
+ .link--primary:hover { color:#327ea6; }
 
  .header { position:fixed; top:0; width:100%; z-index:3; background-color:white; box-shadow:0px 0px 10px #ccc; }
 
- .header__topbar { background-color:#75a582; padding:0% 8%; height:30px; color:white; display:flex; justify-content:flex-end; align-items:center; }
+ .header__topbar { background-color:#26607f; padding:0% 8%; height:30px; color:white; display:flex; justify-content:flex-end; align-items:center; }
 
  .header__topbar ul { justify-content:center; display:flex; align-items:center; }
 
@@ -76,15 +80,15 @@
 
  .header__menu a { color:black; transition:color 300ms ease; }
 
- .header__menu a:hover { color:#75a582; }
+ .header__menu a:hover { color:#26607f; }
 
  .header__mobile { display:flex; flex:1; justify-content:flex-end; }
 
  .header__icons { display:flex; justify-content:center; align-items:center; }
 
- .header__icons .fas { font-size:1.75rem; padding:15px; color:#75a582; }
+ .header__icons .fas { font-size:1.75rem; padding:15px; color:#26607f; }
 
- .header__hamburger { display:flex; flex-direction:column; align-items:center; justify-content:center; background-color:#75a582; width:70px; cursor:pointer; }
+ .header__hamburger { display:flex; flex-direction:column; align-items:center; justify-content:center; background-color:#26607f; width:70px; cursor:pointer; }
 
  .header__hamburger span { height:4px; width:35px; margin-bottom:5px; border-radius:5px; background-color:white; transition:all 300ms cubic-bezier(0.645, 0.045, 0.355, 1); }
 
@@ -120,7 +124,7 @@
 
  }
 
- .footer { color:white; padding:20px; background-image:url("https://www.debouwcombinatienc.nl/wp-content/uploads/2019/02/prism.png"); border-top:7px solid #75a582; }
+ .footer { color:white; padding:20px; background-image:url("https://www.debouwcombinatienc.nl/wp-content/uploads/2019/02/prism.png"); border-top:7px solid #26607f; }
 
  .footer__menu { flex-direction:column; display:flex; }
 
@@ -128,7 +132,7 @@
 
  .footer__menu ul li { padding:2px 0; }
 
- .footer__menu ul li .fas { font-size:1.35rem; margin-right:10px; color:#75a582; }
+ .footer__menu ul li .fas { font-size:1.35rem; margin-right:10px; color:#26607f; }
 
  .footer__bottom { height:25px; display:flex; align-items:center; justify-content:flex-end; background-color:#202020; color:#ccc; font-size:0.6rem; }
 
@@ -140,7 +144,9 @@
 
  .advertisement__content { padding:1rem; background-color:#fff; color:#6d6d6d; font-size:2rem; }
 
- .service-card { box-shadow:0px 0px 10px #ccc; border-radius:5px; height:250px; transition:250ms; background-color:white; cursor:pointer; margin:30px; }
+ .service-card { box-shadow:0px 0px 10px #ccc; border-radius:5px; height:250px; transition:250ms; background-color:white; cursor:pointer; margin:30px; border-top:5px solid #26607f; position:relative; }
+
+ .service-card__icon { position:absolute; top:10px; left:10px; background-color:white; width:50px; height:50px; border-radius:50%; color:#26607f; font-size:1.5rem; box-shadow:0px 0px 10px #ccc; }
 
  .service-card__thumb { width:100%; }
 

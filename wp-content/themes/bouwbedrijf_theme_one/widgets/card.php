@@ -79,6 +79,7 @@ class Card extends Widget_Base{
 
     ?>
     <div class="service-card">
+      <div class="service-card__icon d-flex justify-content-center align-items-center"><i class="fas fa-hammer"></i></div>
       <div class="service-card__thumb">
         <img src="https://www.debouwcombinatienc.nl/wp-content/uploads/2018/12/aanbouw.jpg" />
       </div>

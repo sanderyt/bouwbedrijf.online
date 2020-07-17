@@ -1,22 +1,31 @@
 .btn {
   padding: 20px;
-  color: white;
   margin: 0 15px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: $border-radius-button;
+  transition: 250ms;
 
   &--cta {
     background-color: $cta-color;
-  }
 
-  a {
-    color: white;
+    & a {
+      color: white !important;
+    }
+
+    &:hover {
+      background-color: darken($cta-color, 10%);
+    }
   }
 }
 
-.elementor-button {
-  background-color: red;
+.elementor-12 .elementor-element.elementor-element-ddd63e7 .elementor-button {
+  background-color: $primary-color;
+  transition: 250ms;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
 }
