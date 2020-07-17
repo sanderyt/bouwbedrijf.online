@@ -8,6 +8,10 @@
   justify-content: center;
   border-radius: $border-radius-button;
 
+  &--cta {
+    background-color: $cta-color;
+  }
+
   a {
     color: white;
   }

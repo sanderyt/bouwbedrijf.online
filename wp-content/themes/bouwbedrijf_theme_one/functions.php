@@ -1,6 +1,7 @@
 <?php
 
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/sass-customizer.php';
 
 require_once 'custom-elementor.php';
 

@@ -3,7 +3,6 @@
 add_action('customize_register', 'business_information_customizer');
 add_action('customize_register', 'colors_settings');
 add_action('customize_register', 'images_register');
-add_action( 'wp_head', 'cd_customizer_css');
 
 function business_information_customizer($wp_customize) {
     $wp_customize->add_section('business_information', array(
@@ -123,16 +122,6 @@ function images_register( $wp_customize ) {
         'section'           => 'images',
         'settings'          => 'logo',    
     )));
-}
-
-function cd_customizer_css()
-{
-    ?>
-         <style type="text/css">
-             .header__topbar { background-color: <?php echo get_theme_mod('primary_color', '#43C6E4'); ?>; }
-             .btn { background-color: <?php echo get_theme_mod('cta_color', '#43C6E4'); ?>; }
-         </style>
-    <?php
 }
 
 ?>
