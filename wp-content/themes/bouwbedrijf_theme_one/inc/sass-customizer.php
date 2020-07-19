@@ -31,6 +31,8 @@ if ( is_customize_preview() && ! defined( 'WP_SCSS_ALWAYS_RECOMPILE' ) ) {
     define( 'WP_SCSS_ALWAYS_RECOMPILE', true );
  
 }
+
+define( 'WP_SCSS_ALWAYS_RECOMPILE', true );
  
 // Update the default paths to match theme.
 $wpscss_options = get_option( 'wpscss_options' );
