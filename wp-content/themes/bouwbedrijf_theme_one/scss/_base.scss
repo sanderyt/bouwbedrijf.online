@@ -32,3 +32,10 @@ p,
 li {
   line-height: 1.5;
 }
+
+.elementor-column-gap-default
+  > .elementor-row
+  > .elementor-column
+  > .elementor-element-populated {
+  padding: 0;
+}
