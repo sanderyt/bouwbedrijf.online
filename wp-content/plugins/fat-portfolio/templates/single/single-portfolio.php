@@ -9,10 +9,6 @@ $settings = function_exists('fat_get_settings') ? fat_get_settings() : array();
 
 wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), false);
 
-if(!isset($settings['single_unload_bootstrap']) || $settings['single_unload_bootstrap'] != '1'){
-    wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array(), false);
-}
-
 wp_enqueue_script('images-loaded', FAT_PORTFOLIO_ASSET_JS_URL . 'library/isotope/imagesloaded.pkgd.min.js', false, true);
 wp_enqueue_script('isotope', FAT_PORTFOLIO_ASSET_JS_URL . 'library/isotope/isotope.pkgd.min.js', false, true);
 wp_enqueue_script('masonry', FAT_PORTFOLIO_ASSET_JS_URL . 'library/isotope/masonry.pkgd.min.js', false, true);
@@ -68,6 +64,14 @@ do_action('fat_portfolio_before_single');
             </div>
         </div>
     <?php endif; ?>
+    <main>
+        <div class="container-fluid">
+            <div class="row subheader">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <h1><?php the_title();?></h1>
+                </div>
+            </div>
+        </div>
     <div class="fat-portfolio-single <?php echo sprintf('%s %s %s', $css_class, $detail_style, $single_light_box_gallery); ?>">
         <div class="fat-container">
             <?php
@@ -159,6 +163,7 @@ do_action('fat_portfolio_before_single');
             ?>
         </div>
     </div>
+        </main>
 
 <?php
 

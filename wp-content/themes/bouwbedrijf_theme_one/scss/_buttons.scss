@@ -21,11 +21,20 @@
   }
 }
 
+//Plugin buttons styling
 .elementor-12 .elementor-element.elementor-element-ddd63e7 .elementor-button {
-  background-color: $primary-color;
+  background-color: $primary-color !important;
   transition: 250ms;
 
   &:hover {
     background-color: darken($primary-color, 10%);
+  }
+}
+
+.elementor-button {
+  background-color: $primary-color !important;
+
+  &:hover {
+    background-color: darken($primary-color, 10%) !important;
   }
 }
