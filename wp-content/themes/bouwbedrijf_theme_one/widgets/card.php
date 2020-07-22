@@ -38,29 +38,47 @@ class Card extends Widget_Base{
     $this->add_control(
       'label_heading',
       [
-        'label' => 'Label Heading',
+        'label' => 'Dienst',
         'type' => \Elementor\Controls_Manager::TEXT,
-        'default' => 'My Example Heading'
+        'default' => 'Timmerwerk'
       ]
     );
 
     $this->add_control(
-      'content_heading',
-      [
-        'label' => 'Content Heading',
-        'type' => \Elementor\Controls_Manager::TEXT,
-        'default' => 'My Other Example Heading'
-      ]
+			'icon',
+			[
+				'label' => __( 'Icoontje dienst', 'plugin-domain' ),
+				'type' => \Elementor\Controls_Manager::ICON,
+				'default' => 'fa fa-paint-brush',
+			]
     );
-
+    
     $this->add_control(
-      'content',
-      [
-        'label' => 'Content',
-        'type' => \Elementor\Controls_Manager::WYSIWYG,
-        'default' => 'Some example content. Start Editing Here.'
-      ]
+			'website_link',
+			[
+				'label' => __( 'Link', 'plugin-domain' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'placeholder' => __( 'https://your-link.com', 'plugin-domain' ),
+				'show_external' => true,
+				'default' => [
+					'url' => '',
+					'is_external' => false,
+					'nofollow' => true,
+				],
+			]
     );
+    
+    $this->add_control(
+			'image',
+			[
+				'label' => __( 'Kies een afbeelding', 'plugin-domain' ),
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'default' => [
+					'url' => \Elementor\Utils::get_placeholder_image_src(),
+				],
+			]
+		);
+
 
     $this->end_controls_section();
   }
@@ -78,15 +96,17 @@ class Card extends Widget_Base{
     );
 
     ?>
+    <a href="/timmerwerk">
     <div class="service-card">
-      <div class="service-card__icon d-flex justify-content-center align-items-center"><i class="fas fa-hammer"></i></div>
+      <div class="service-card__icon d-flex justify-content-center align-items-center"><i class="<?php echo $settings['icon'] ?>"></i></div>
       <div class="service-card__thumb">
-        <img src="https://www.debouwcombinatienc.nl/wp-content/uploads/2018/12/aanbouw.jpg" />
+        <img src="<?php echo $settings['image']['url'] ?>" />
       </div>
       <div class="service-card__title d-flex justify-content-center align-items-center">
         <h3><?php echo $settings['label_heading'] ?></h3>
       </div>
     </div>
+    </a>
     <?php
   }
 }
