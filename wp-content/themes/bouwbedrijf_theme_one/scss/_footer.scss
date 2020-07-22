@@ -16,6 +16,11 @@
 
       li {
         padding: 2px 0;
+        transition: 500ms;
+
+        &:hover {
+          color: #ebebeb;
+        }
 
         .fas {
           font-size: 1.35rem;

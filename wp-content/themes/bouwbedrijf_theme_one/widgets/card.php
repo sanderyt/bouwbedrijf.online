@@ -96,7 +96,7 @@ class Card extends Widget_Base{
     );
 
     ?>
-    <a href="/timmerwerk">
+    <a href="<?php echo get_site_url(); ?>/<?php echo $settings['website_link']['url'] ?>">
     <div class="service-card">
       <div class="service-card__icon d-flex justify-content-center align-items-center"><i class="<?php echo $settings['icon'] ?>"></i></div>
       <div class="service-card__thumb">
