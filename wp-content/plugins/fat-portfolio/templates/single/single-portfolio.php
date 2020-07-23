@@ -67,6 +67,7 @@ do_action('fat_portfolio_before_single');
     <main>
         <div class="container-fluid">
             <div class="row subheader">
+                <div class="subheader__overlay"></div>
                 <div class="col d-flex justify-content-center align-items-center">
                     <h1><?php the_title();?></h1>
                 </div>
@@ -153,11 +154,6 @@ do_action('fat_portfolio_before_single');
             $template_related = apply_filters('fat-portfolio-single-related-template', $template_related, $post_id);
             if ($enable_related_portfolio && file_exists($template_related)) {
                 include_once $template_related;
-            }
-
-            // If comments are open or we have at least one comment, load up the comment template.
-            if ( comments_open() || get_comments_number() ) {
-                comments_template();
             }
 
             ?>

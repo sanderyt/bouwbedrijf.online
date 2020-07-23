@@ -1,4 +1,4 @@
- @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap"); @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"); html,body,li,ul { margin:0; padding:0; font-family:"Rubik", "Arial", "sans-serif"; }
+ @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap"); @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"); html,body,li,ul,p { margin:0; padding:0; font-family:"Rubik", "Arial", "sans-serif"; }
 
  a { text-decoration:none; color:inherit; }
 
@@ -11,8 +11,6 @@
  h1,h2,h3,h4 { color:#26607f; }
 
  p,li { line-height:1.5; }
-
- .elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated { padding:0; }
 
  .btn { padding:20px; margin:0 15px; height:40px; display:flex; align-items:center; justify-content:center; border-radius:5px; transition:250ms; }
 
