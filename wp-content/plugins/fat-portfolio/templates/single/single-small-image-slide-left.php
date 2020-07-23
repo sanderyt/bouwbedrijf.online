@@ -22,10 +22,10 @@ $img_col = $has_right_col ? $img_col : 'fat-col-md-12';
         </div>
         <?php if ($has_right_col): ?>
             <div class="fat-col-md-4  fat-col-sm-12 fat-col-xs-12">
-                <div class="portfolio-info-label">
+                <!-- <div class="portfolio-info-label">
                     <span><?php echo esc_html($project_info_label); ?></span>
-                </div>
-                <div class="attribute-container">
+                </div> -->
+                <!-- <div class="attribute-container">
                     <?php if ($cat): ?>
                         <div class="attr-item">
                             <span class="attr-title"><?php echo esc_html($single_category_label); ?> : </span>
@@ -47,23 +47,18 @@ $img_col = $has_right_col ? $img_col : 'fat-col-md-12';
                     }
                     ?>
 
-                </div>
+                </div> -->
                 <div class="excerpt-container">
                     <div class="excerpt-label"><?php echo esc_html($project_detail_label); ?></div>
                     <div class="excerpt-detail">
-                        <?php the_excerpt(); ?>
+                        <?php the_content(); ?>
+                        <button class="btn btn--cta mt-3">Offerte aanvragen</button>
                     </div>
                 </div>
-                <?php
-                $share_template = FAT_PORTFOLIO_DIR_PATH . "/templates/single/social-share.php";
-                if (file_exists($share_template)) {
-                    include_once $share_template;
-                }
-                ?>
             </div>
         <?php endif; ?>
     </div>
-    <?php if ($content_exists): ?>
+    <!-- <?php if ($content_exists): ?>
         <div class="fat-row">
             <div class="fat-col-md-12 detail-container">
                 <div class="portfolio-detail-label"><?php echo esc_html($more_detail_label); ?></div>
@@ -72,5 +67,5 @@ $img_col = $has_right_col ? $img_col : 'fat-col-md-12';
                 </div>
             </div>
         </div>
-    <?php endif; ?>
+    <?php endif; ?> -->
 </div>

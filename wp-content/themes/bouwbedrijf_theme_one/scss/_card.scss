@@ -1,7 +1,7 @@
 .service-card {
   box-shadow: $box-shadow-setting;
   border-radius: $border-radius-button;
-  transition: 400ms;
+  transition: 250ms;
   background-color: white;
   cursor: pointer;
   margin: 30px;
@@ -27,5 +27,6 @@
 
   &:hover {
     box-shadow: 0 0 15px #aaa;
+    transform: translateY(-2%);
   }
 }
