@@ -36,29 +36,20 @@ class Hero extends Widget_Base{
     );
 
     $this->add_control(
-      'label_heading',
+      'title_hero',
       [
-        'label' => 'Label Heading',
+        'label' => 'Titel hero',
         'type' => \Elementor\Controls_Manager::TEXT,
-        'default' => 'My Example Heading'
+        'default' => 'Bouwbedrijf de Vries'
       ]
     );
 
     $this->add_control(
-      'content_heading',
-      [
-        'label' => 'Content Heading',
-        'type' => \Elementor\Controls_Manager::TEXT,
-        'default' => 'My Other Example Heading'
-      ]
-    );
-
-    $this->add_control(
-      'content',
+      'content_hero',
       [
         'label' => 'Content',
         'type' => \Elementor\Controls_Manager::WYSIWYG,
-        'default' => 'Some example content. Start Editing Here.'
+        'default' => 'Schrijf een korte, krachtige beschrijving over uw bedrijf.'
       ]
     );
 
@@ -80,8 +71,11 @@ class Hero extends Widget_Base{
     ?>
     <div class="hero d-flex justify-content-center align-items-center">
       <div class="hero__overlay"></div>
-      <div class="hero__box d-flex justify-content-center align-items-center">
-        <h1>Bouwbedrijf de Vries</h1>
+      <div class="hero__box d-flex flex-column justify-content-center align-items-center">
+        <h1><?php echo $settings['title_hero'] ?></h1>
+        <p><?php echo $settings['content_hero'] ?></p>
+        <div class="d-flex">
+        </div>
       </div>
     </div>
     <?php

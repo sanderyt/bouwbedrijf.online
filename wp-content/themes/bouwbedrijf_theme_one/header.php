@@ -23,7 +23,7 @@
         </div>
         <div class="header__main row">
           <div class="header__logo">
-          <a href="/">
+          <a href="<?php echo get_site_url(); ?>">
             <img src="<?php echo esc_url( get_theme_mod( 'logo' ) ); ?>" alt="logo" />
           </a>
           </div>
