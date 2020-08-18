@@ -14,11 +14,11 @@
 
  .btn { padding:20px; margin:0 15px; height:40px; display:flex; align-items:center; justify-content:center; border-radius:5px; transition:250ms; }
 
- .btn--cta { background-color:#36d183; }
+ .btn--cta { background-color:#36d183; color:white; }
 
  .btn--cta a { color:white !important; }
 
- .btn--cta:hover { background-color:#27ad6a; }
+ .btn--cta:hover { background-color:#27ad6a; color:white; }
 
  .elementor-12 .elementor-element.elementor-element-ddd63e7 .elementor-button { background-color:#26607f !important; transition:250ms; }
 
@@ -115,6 +115,10 @@
  .subheader__overlay { position:absolute; top:0; background-color:rgba(0, 0, 0, 0.5); height:100%; width:100%; }
 
  .subheader h1 { color:white; }
+
+ @media (max-width:767px) { .subheader h1 { font-size:24px; }
+
+ }
 
  .mobilemenu { display:none; }
 

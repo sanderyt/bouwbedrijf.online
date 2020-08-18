@@ -10,6 +10,7 @@
 
   &--cta {
     background-color: $cta-color;
+    color: white;
 
     & a {
       color: white !important;
@@ -17,6 +18,7 @@
 
     &:hover {
       background-color: darken($cta-color, 10%);
+      color: white;
     }
   }
 }
