@@ -86,10 +86,6 @@ $skins = array(
         'title' => esc_html__('Thumbnail, title - category hover', 'fat-portfolio'),
         'image' => FAT_PORTFOLIO_ASSET_IMAGES_URL . 'skins/thumb-title-cat-hover.jpg'
     ),
-    'thumb-title' => array(
-        'title' => esc_html__('Thumbnail, title hover', 'fat-portfolio'),
-        'image' => FAT_PORTFOLIO_ASSET_IMAGES_URL . 'skins/thumb-title.jpg'
-    ),
     'thumb-both-title-excerpt-hover' => array(
         'title' => esc_html__('Thumbnail, title & excerpt hover', 'fat-portfolio'),
         'image' => FAT_PORTFOLIO_ASSET_IMAGES_URL . 'skins/thumb-both-title-excerpt-hover.jpg'

@@ -22,7 +22,7 @@ if (!function_exists('load_gallery_callback')) {
         $media['media_type'] = $media_type;
         $media['media_source'] = $media_source;
 
-        if ((!isset($settings['exclude_thumbnail']) || $settings['exclude_thumbnail']!='1') && $media_type === 'image' && $media_source === 'media' && has_post_thumbnail($post_id)) {
+        if ($media_type === 'image' && $media_source === 'media' && has_post_thumbnail($post_id)) {
             $thumbnail_id = get_post_thumbnail_id($post_id);
             array_unshift($portfolio_gallery, $thumbnail_id);
         }

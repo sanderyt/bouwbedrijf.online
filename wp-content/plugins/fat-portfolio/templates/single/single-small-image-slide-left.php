@@ -12,6 +12,7 @@ $img_col = $has_right_col ? $img_col : 'fat-col-md-12';
 ?>
 <div class="fat-portfolio-main-detail">
     <div class="fat-row">
+	<h1><?php the_title(); ?></h1>
         <div class="<?php echo esc_attr($img_col); ?> fat-col-sm-12 fat-col-xs-12 small-image-slide image-gallery">
             <?php
             $media_template = FAT_PORTFOLIO_DIR_PATH . "/templates/single/big-$media_source.php";
@@ -22,10 +23,18 @@ $img_col = $has_right_col ? $img_col : 'fat-col-md-12';
         </div>
         <?php if ($has_right_col): ?>
             <div class="fat-col-md-4  fat-col-sm-12 fat-col-xs-12">
-                <!-- <div class="portfolio-info-label">
+                <div class="excerpt-container">
+                    <div class="excerpt-label"><?php echo esc_html($project_detail_label); ?></div>
+                    <div class="excerpt-detail">
+                        <?php the_content() ?>
+						<b>Interesse? Vraag een offerte aan:</b><br><br>
+						<a href="/offerte-aanvragen" class="offerteknop">Offerte aanvragen</a>
+                    </div>
+                </div>
+				<div class="portfolio-info-label">
                     <span><?php echo esc_html($project_info_label); ?></span>
-                </div> -->
-                <!-- <div class="attribute-container">
+                </div>
+                <div class="attribute-container">
                     <?php if ($cat): ?>
                         <div class="attr-item">
                             <span class="attr-title"><?php echo esc_html($single_category_label); ?> : </span>
@@ -47,25 +56,9 @@ $img_col = $has_right_col ? $img_col : 'fat-col-md-12';
                     }
                     ?>
 
-                </div> -->
-                <div class="excerpt-container">
-                    <div class="excerpt-label"><?php echo esc_html($project_detail_label); ?></div>
-                    <div class="excerpt-detail">
-                        <?php the_content(); ?>
-                        <button class="btn btn--cta mt-3">Offerte aanvragen</button>
-                    </div>
                 </div>
+			
             </div>
         <?php endif; ?>
     </div>
-    <!-- <?php if ($content_exists): ?>
-        <div class="fat-row">
-            <div class="fat-col-md-12 detail-container">
-                <div class="portfolio-detail-label"><?php echo esc_html($more_detail_label); ?></div>
-                <div class="portfolio-detail">
-                    <?php the_content() ?>
-                </div>
-            </div>
-        </div>
-    <?php endif; ?> -->
 </div>

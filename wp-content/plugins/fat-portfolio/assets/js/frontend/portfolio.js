@@ -219,7 +219,7 @@
                             $('.fat-hover-wrap', $fat_thumbnail).attr('style', $style);
                         });
                         $('.fat-hover-wrap', $container).attr('style', '');
-                    }, 800);
+                    }, 500);
                 } else {
                     FatPortfolio.showNotified('Waterwheel Carousel library not found. Please do not check "Unload Waterwheel Carousel" in Portfolio -> Settings', 8000);
                 }
@@ -840,10 +840,6 @@
                             $ladda.stop();
                         }
                         $(this).removeClass('process');
-
-                        setTimeout(function(){
-                            $('body').removeClass('fade-out');
-                        },800);
                     });
 
                 }else{
@@ -868,14 +864,6 @@
         this.bindItems = function ($container, $data, elm) {
             var $items = $('.fat-portfolio-item', $data),
                 $paging = $('.paging-navigation', $data);
-
-            if ($container.hasClass('layout-flipster')) {
-                $('.fat-flipster', $container).removeClass('flipster flipster--transform flipster--coverflow flipster--click flipster--active');
-                $('.fat-flipster', $container).removeClass('flipster--carousel');
-                $('.fat-item-wrap', $container).removeClass('flipster__container');
-                $('.fat-item-wrap', $container).removeAttr('style');
-                $('.fat-flipster button', $container).remove();
-            }
 
             if (!$(elm).hasClass('load-more') && !$(elm).hasClass('infinite-scroll')) {
                 $('.fat-item-wrap', $container).empty();
@@ -907,8 +895,8 @@
             }
 
             if ($container.hasClass('layout-flipster')) {
-                /*$('.fat-flipster', $container).removeClass('flipster flipster--transform flipster--coverflow flipster--click flipster--active');
-                $('.fat-flipster button', $container).remove();*/
+                $('.fat-flipster', $container).removeClass('flipster flipster--transform flipster--coverflow flipster--click flipster--active');
+                $('.fat-flipster button', $container).remove();
                 FatPortfolio.initFlipster($container);
             }
 
@@ -928,8 +916,6 @@
             if ($container.hasClass('filter-isotope') || $container.hasClass('metro') || $container.hasClass('layout-masonry')) {
                 if (!$(elm).hasClass('load-more') && !$(elm).hasClass('infinite-scroll')) {
                     FatPortfolio.initIsotope($container);
-                }else{
-                    $items.addClass('infinited');
                 }
             }
 
@@ -1090,7 +1076,7 @@
                                 transitionDuration: '0.5s'
                             }).isotope('layout');
                         }else{
-                            jQuery('.fat-item-wrap', $container).isotope({
+                            $('.fat-item-wrap', $container).isotope({
                                 itemSelector: '.fat-portfolio-item:not(.fat-lazy-load)',
                                 masonry: {
                                     columnWidth: $col_width
@@ -1116,7 +1102,7 @@
                             }
                         },200)
                     });
-                }, 500);
+                }, 300);
 
             } else {
                 FatPortfolio.showNotified('Masonry library not found. Please do not check "Unload Isotope" in Portfolio -> Settings', 8000);

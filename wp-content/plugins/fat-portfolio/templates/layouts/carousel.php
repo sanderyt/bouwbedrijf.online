@@ -6,82 +6,81 @@
  * Time: 2:02 PM
  */
 
-$slider_total_item = isset($shortcode['slider_total_item']) ? $shortcode['slider_total_item'] : 12;
+$slider_total_item = isset($shortcode['slider_total_item']) ? $shortcode['slider_total_item'] :  12;
 $slider_loop = isset($shortcode['slider_loop']) && $shortcode['slider_loop'] == 'true';
 $slider_auto_play = isset($shortcode['slider_auto_play']) && $shortcode['slider_auto_play'] == 'true';
-$slider_auto_play_time = isset($shortcode['slider_auto_play_time']) ? $shortcode['slider_auto_play_time'] : 2000;
-$slider_desktop_large_column = isset($shortcode['slider_desktop_large_column']) ? $shortcode['slider_desktop_large_column'] : 4;
-$slider_desktop_medium_column = isset($shortcode['slider_desktop_medium_column']) ? $shortcode['slider_desktop_medium_column'] : 4;
-$slider_desktop_medium_width = isset($shortcode['slider_desktop_medium_width']) ? $shortcode['slider_desktop_medium_width'] : 1200;
-$slider_desktop_small_column = isset($shortcode['slider_desktop_small_column']) ? $shortcode['slider_desktop_small_column'] : 4;
-$slider_desktop_small_width = isset($shortcode['slider_desktop_small_width']) ? $shortcode['slider_desktop_small_width'] : 980;
-$slider_tablet_column = isset($shortcode['slider_tablet_column']) ? $shortcode['slider_tablet_column'] : 3;
-$slider_tablet_width = isset($shortcode['slider_tablet_width']) ? $shortcode['slider_tablet_width'] : 768;
+$slider_auto_play_time = isset($shortcode['slider_auto_play_time']) ? $shortcode['slider_auto_play_time'] :  2000;
+$slider_desktop_large_column = isset($shortcode['slider_desktop_large_column']) ? $shortcode['slider_desktop_large_column'] :  4;
+$slider_desktop_medium_column = isset($shortcode['slider_desktop_medium_column']) ? $shortcode['slider_desktop_medium_column'] :  4;
+$slider_desktop_medium_width = isset($shortcode['slider_desktop_medium_width']) ? $shortcode['slider_desktop_medium_width'] :  1200;
+$slider_desktop_small_column = isset($shortcode['slider_desktop_small_column']) ? $shortcode['slider_desktop_small_column'] :  4;
+$slider_desktop_small_width = isset($shortcode['slider_desktop_small_width']) ? $shortcode['slider_desktop_small_width'] :  980;
+$slider_tablet_column = isset($shortcode['slider_tablet_column']) ? $shortcode['slider_tablet_column'] :  3;
+$slider_tablet_width = isset($shortcode['slider_tablet_width']) ? $shortcode['slider_tablet_width'] :  768;
 $slider_tablet_small_column = isset($shortcode['slider_tablet_small_column']) ? $shortcode['slider_tablet_small_column'] : 2;
-$slider_tablet_small_width = isset($shortcode['slider_tablet_small_width']) ? $shortcode['slider_tablet_small_width'] : 480;
+$slider_tablet_small_width = isset($shortcode['slider_tablet_small_width']) ? $shortcode['slider_tablet_small_width'] :  480;
 $slider_mobile_column = isset($shortcode['slider_mobile_column']) ? $shortcode['slider_mobile_column'] : 1;
-$slider_mobile_width = isset($shortcode['slider_mobile_width']) ? $shortcode['slider_mobile_width'] : 320;
+$slider_mobile_width = isset($shortcode['slider_mobile_width']) ? $shortcode['slider_mobile_width'] :  320;
 $slider_show_dot = isset($shortcode['slider_show_dot']) && $shortcode['slider_show_dot'] == 'true';
 $slider_show_nav_text = isset($shortcode['slider_show_nav_text']) && $shortcode['slider_show_nav_text'] == 'true';
 $slider_rtl = isset($shortcode['slider_rtl']) && $shortcode['slider_rtl'] == 'true';
 
 $slider_desktop_large_width = $slider_desktop_medium_width + 100;
 $owl_options = array(
-    "responsive" => array(
-        $slider_desktop_large_width => array(
+    "responsive"      => array(
+        $slider_desktop_large_width  => array(
             "items" => $slider_desktop_large_column
         ),
         $slider_desktop_medium_width => array(
             "items" => $slider_desktop_medium_column
         ),
-        $slider_desktop_small_width => array(
+        $slider_desktop_small_width  => array(
             "items" => $slider_desktop_small_column
         ),
-        $slider_tablet_width => array(
+        $slider_tablet_width         => array(
             "items" => $slider_tablet_column
         ),
-        $slider_tablet_small_width => array(
+        $slider_tablet_small_width   => array(
             "items" => $slider_tablet_small_column
         ),
-        $slider_mobile_width => array(
+        $slider_mobile_width         => array(
             "items" => $slider_mobile_column
         )
     ),
-    "margin" => intval($gutter),
-    "dots" => $slider_show_dot,
-    "nav" => $slider_show_nav_text,
-    "autoHeight" => 'true',
-    "autoplay" => $slider_auto_play,
+    "margin"          => intval($gutter),
+    "dots"            => $slider_show_dot,
+    "nav"             => $slider_show_nav_text,
+    "autoHeight"        => 'true',
+    "autoplay"        => $slider_auto_play,
     "autoplayTimeout" => intval($slider_auto_play_time),
-    "rtl" => $slider_rtl,
-    "loop" => $slider_loop,
+    "rtl"             => $slider_rtl
 );
 $owl_options = json_encode($owl_options);
 
 $slider_total_item = isset($shortcode['slider_total_item']) ? $shortcode['slider_total_item'] : 0;
 
-if ($slider_total_item == 0) {
+if ($slider_total_item == 0 ) {
     $item_per_page = -1;
 }
 
 $offset = $item_per_page > 0 ? ($current_page - 1) * $item_per_page : 0;
 
 $args = array(
-    'offset' => $offset,
+    'offset'         => $offset,
     'posts_per_page' => $item_per_page,
-    'post_type' => FAT_PORTFOLIO_POST_TYPE,
-    'post_status' => 'publish'
+    'post_type'      => FAT_PORTFOLIO_POST_TYPE,
+    'post_status'    => 'publish'
 );
 
 $current_categories = isset($_GET['category']) ? explode(',', $_GET['category']) : $categories;
-$current_categories = isset($atts['category']) && $atts['category'] != '' ? explode(',', $atts['category']) : $current_categories;
+$current_categories = isset($atts['category']) && $atts['category'] !='' ?  explode(',', $atts['category']) : $current_categories;
 
 if ($data_source === 'categories' || $data_source === 'categories_attrs') {
     $args[FAT_PORTFOLIO_CATEGORY_TAXONOMY] = $current_categories;
 } else {
     $args['post__in'] = $ids;
 }
-if (isset($atts['category']) && $atts['category'] != '') {
+if(isset($atts['category']) && $atts['category'] !=''){
     $args[FAT_PORTFOLIO_CATEGORY_TAXONOMY] = $current_categories;
 }
 
@@ -127,7 +126,7 @@ if ($data_source === 'categories_attrs' && isset($enable_special_attr) && $enabl
     }
 }
 
-if (isset($_GET['tag']) && $_GET['tag'] != '') {
+if(isset($_GET['tag']) && $_GET['tag']!=''){
     $args[FAT_PORTFOLIO_TAG_TAXONOMY] = $_GET['tag'];
 }
 
@@ -148,10 +147,10 @@ $posts = new WP_Query($args);
 $total_post = $posts->found_posts;
 
 $has_animation = $animation != 'none' ? 'has-animation' : '';
-$wrap_class = sprintf('fat-portfolio-shortcode fat-shortcode-%s clearfix fat-padding-0 filter-ajax %s %s layout-%s ', $id, $skin, $has_animation, $layout_type);
-$wrap_class .= isset($hide_all_category) && $hide_all_category && $show_category !== 'none' ? ' hide-all-category' : '';
-$title_image_popup_gallery = isset($settings['title_image_popup_gallery']) ? $settings['title_image_popup_gallery'] : 'image_title';
-$disable_crop_image = isset($shortcode['disable_crop_image']) && $shortcode['disable_crop_image'] == 'true';
+$wrap_class = sprintf('fat-portfolio-shortcode fat-shortcode-%s clearfix fat-padding-0 filter-ajax %s %s layout-%s ', $id,  $skin, $has_animation, $layout_type);
+$wrap_class .= isset($hide_all_category) && $hide_all_category && $show_category!=='none' ? ' hide-all-category' : '';
+$title_image_popup_gallery =  isset($settings['title_image_popup_gallery']) ? $settings['title_image_popup_gallery'] : 'image_title';
+$disable_crop_image =  isset($shortcode['disable_crop_image']) && $shortcode['disable_crop_image'] == 'true';
 $disable_detail = isset($settings['disable_detail']) ? $settings['disable_detail'] : '0';
 ?>
 
@@ -187,10 +186,10 @@ $disable_detail = isset($settings['disable_detail']) ? $settings['disable_detail
                 break;
             }
             $post_id = get_the_ID();
-            $portfolio_general = get_post_meta($post_id, 'fat-mb-portfolio-general', false);
+            $portfolio_general =  get_post_meta($post_id,'fat-mb-portfolio-general', false);
             $portfolio_general = isset($portfolio_general[0]) ? $portfolio_general[0] : array();
             $css_class = isset($portfolio_general['css_class']) ? $portfolio_general['css_class'] : '';
-            $date = get_the_date('', $post_id);
+            $date = get_the_date('',$post_id);
             $cat = $cat_filter = $tax = $tax_filter = $thumbnail_url = $url_origin = '';
 
             if (isset($enable_special_attr) && $enable_special_attr) {
@@ -221,7 +220,7 @@ $disable_detail = isset($settings['disable_detail']) ? $settings['disable_detail
                     if (isset($term->taxonomy) && $term->taxonomy === FAT_PORTFOLIO_STATUS_TAXONOMY) {
                         $tax_filter .= 'status-' . $term->slug . ' ';
                     }
-                    $tax .= '<a href="' . get_term_link($term) . '">' . $term->name . '</a>' . ', ';
+                    $tax .= '<a href="'. get_term_link($term).'">' . $term->name . '</a>' .', ';
                 }
             }
             foreach ($terms as $term) {
@@ -238,11 +237,11 @@ $disable_detail = isset($settings['disable_detail']) ? $settings['disable_detail
                 $arrImages = wp_get_attachment_image_src($post_thumbnail_id, 'full');
                 if (count($arrImages) > 0) {
                     $url_origin = $arrImages[0];
-                    if (!$disable_crop_image) {
-                        $resize = fat_portfolio_image_resize_id($post_thumbnail_id, $image_width, $image_height);
-                        if ($resize != null && is_array($resize))
-                            $thumbnail_url = $resize['url'];
-                    } else {
+                    if(!$disable_crop_image){
+                         $resize =  fat_portfolio_image_resize_id($post_thumbnail_id, $image_width, $image_height);
+                         if ($resize != null && is_array($resize))
+                             $thumbnail_url = $resize['url'];
+                    }else{
                         $thumbnail_url = $arrImages[0];
                     }
 
@@ -252,9 +251,9 @@ $disable_detail = isset($settings['disable_detail']) ? $settings['disable_detail
             }
 
             /* include gallery */
-            if (isset($full_gallery) && $full_gallery) {
+            if(isset($full_gallery) && $full_gallery){
                 $full_gallery_template = untrailingslashit(FAT_PORTFOLIO_DIR_PATH) . '/templates/layouts/gallery.php';
-                if (file_exists($full_gallery_template)) {
+                if(file_exists($full_gallery_template)){
                     include $full_gallery_template;
                 }
             }

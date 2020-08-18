@@ -57,10 +57,11 @@ if (isset($shortcode['ds_type']) && $shortcode['ds_type'] == '') {
 } else {
     $type_tax = Fat_Portfolio_Base::get_portfolio_taxonomy(FAT_PORTFOLIO_TYPE_TAXONOMY, true, $shortcode['ds_type']);
 }
-if(isset($type_tax) && is_array($type_tax)){
-    foreach ($type_tax as $key => $value) {
-        $type_all .= $key . ',';
-    }
+if(isset($type_tax) && is_array()){
+
+}
+foreach ($type_tax as $key => $value) {
+    $type_all .= $key . ',';
 }
 $type_all = rtrim($type_all, ',');
 

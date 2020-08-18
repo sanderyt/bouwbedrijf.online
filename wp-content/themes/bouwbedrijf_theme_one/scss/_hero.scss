@@ -2,7 +2,11 @@
   height: 100vh;
   background-image: url("https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   position: relative;
-  margin-top: -105px;
+  margin: -115px -10px 0 -10px;
+
+  @media (max-width: 768px) {
+    margin: -85px -10px 0 -10px;
+  }
 
   &__overlay {
     position: absolute;

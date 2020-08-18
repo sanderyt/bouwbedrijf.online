@@ -3,7 +3,7 @@
 Plugin Name: FAT Portfolio
 Plugin URI:  http://plugins.roninwp.com/portfolio
 Description: Advanced portfolio plugin for show portfolio, gallery and more your work
-Version:     1.21
+Version:     1.17
 Author:      Roninwp
 Author URI:  http://themes.roninwp.com
 Domain Path: /languages
@@ -57,7 +57,7 @@ if (!class_exists('FAT_Portfolio')) {
     class FAT_Portfolio
     {
         public $bg_hover_color = '';
-        private $version = '1.21';
+        private $version = '1.16';
 
         function __construct()
         {
@@ -82,13 +82,6 @@ if (!class_exists('FAT_Portfolio')) {
 
             add_filter('single_template', array($this, 'get_portfolio_single_template'));
             add_filter('archive_template', array($this, 'get_portfolio_archive_template'));
-
-            add_image_size('fat-portfolio-750x550',750,550,true);
-            add_image_size('fat-portfolio-750x450',750,450,true);
-            add_image_size('fat-portfolio-1170x700',1170,700,true);
-            add_image_size('fat-portfolio-274x164',274,164,true);
-            add_image_size('fat-portfolio-300x200',300,200,true);
-            add_image_size('fat-portfolio-375x275',375,275,true);
 
             add_shortcode('fat_portfolio', array($this, 'fat_portfolio_shortcode'));
 
@@ -147,11 +140,11 @@ if (!class_exists('FAT_Portfolio')) {
                         'singular_name'      => $singular_name,
                         'menu_name'          => ucfirst($name),
                         'parent_item_colon'  => esc_html__('Parent Item:', 'fat-portfolio'),
-                        'all_items'          => sprintf(esc_html__('All %s', 'fat-portfolio'), $name),
+                        'all_items'          => sprintf(esc_html__('Alle projecten', 'fat-portfolio'), $name),
                         'view_item'          => esc_html__('View Item', 'fat-portfolio'),
-                        'add_new_item'       => sprintf(esc_html__('Add New  %s', 'fat-portfolio'), $name),
-                        'add_new'            => esc_html__('Add New', 'fat-portfolio'),
-                        'edit_item'          => esc_html__('Edit Item', 'fat-portfolio'),
+                        'add_new_item'       => sprintf(esc_html__('Nieuw project toevoegen', 'fat-portfolio'), $name),
+                        'add_new'            => esc_html__('Project toevoegen', 'fat-portfolio'),
+                        'edit_item'          => esc_html__('Project wijzigen', 'fat-portfolio'),
                         'update_item'        => esc_html__('Update Item', 'fat-portfolio'),
                         'search_items'       => esc_html__('Search Item', 'fat-portfolio'),
                         'not_found'          => esc_html__('Not found', 'fat-portfolio'),
@@ -331,11 +324,11 @@ if (!class_exists('FAT_Portfolio')) {
                 $columns['author']
             );
             $cols = array_merge(array('cb' => ('')), $columns);
-            $cols = array_merge($cols, array('title' => esc_html__('Title', 'fat-portfolio')));
-            $cols = array_merge($cols, array('thumbnail' => esc_html__('Thumbnail', 'fat-portfolio')));
-            $cols = array_merge($cols, array(FAT_PORTFOLIO_CATEGORY_TAXONOMY => esc_html__('Categories', 'fat-portfolio')));
-            $cols = array_merge($cols, array('author' => esc_html__('Author', 'fat-portfolio')));
-            $cols = array_merge($cols, array('date' => esc_html__('Date', 'fat-portfolio')));
+            $cols = array_merge($cols, array('title' => esc_html__('Projecten', 'fat-portfolio')));
+            $cols = array_merge($cols, array('thumbnail' => esc_html__('Afbeelding', 'fat-portfolio')));
+            $cols = array_merge($cols, array(FAT_PORTFOLIO_CATEGORY_TAXONOMY => esc_html__('Werkzaamheden', 'fat-portfolio')));
+            $cols = array_merge($cols, array('author' => esc_html__('Auteur', 'fat-portfolio')));
+            $cols = array_merge($cols, array('date' => esc_html__('Datum', 'fat-portfolio')));
             return $cols;
         }
 
@@ -374,7 +367,7 @@ if (!class_exists('FAT_Portfolio')) {
                 $selected = isset($_GET[FAT_PORTFOLIO_CATEGORY_TAXONOMY]) ? $_GET[FAT_PORTFOLIO_CATEGORY_TAXONOMY] : '';
                 $args = array(
                     'show_count'      => true,
-                    'show_option_all' => esc_html__('Show All Categories', 'fat-portfolio'),
+                    'show_option_all' => esc_html__('Alle werkzaamheden', 'fat-portfolio'),
                     'taxonomy'        => FAT_PORTFOLIO_CATEGORY_TAXONOMY,
                     'name'            => FAT_PORTFOLIO_CATEGORY_TAXONOMY,
                     'selected'        => $selected,
@@ -464,7 +457,7 @@ if (!class_exists('FAT_Portfolio')) {
             $settings = function_exists('fat_get_settings') ? fat_get_settings() : array();
 
             wp_enqueue_style('fat-animate', FAT_PORTFOLIO_ASSET_JS_URL . 'library/animate/animate.css', array(), false);
-            wp_enqueue_style('font-awesome-4.5.0', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), false);
+            wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), false);
             wp_enqueue_style('fat-ladda-css', FAT_PORTFOLIO_ASSET_JS_URL . 'library/ladda/ladda-themeless.min.css', array(), false);
             wp_enqueue_style('jquery-light-gallery', FAT_PORTFOLIO_ASSET_JS_URL . 'library/light-gallery/css/lightgallery.min.css', array(), false);
             wp_enqueue_style('jquery-light-gallery-transition', FAT_PORTFOLIO_ASSET_JS_URL . 'library/light-gallery/css/lg-transitions.min.css', array(), false);
@@ -479,7 +472,7 @@ if (!class_exists('FAT_Portfolio')) {
             //wp_print_styles('fat-portfolio');
 
             if (!isset($settings['unload_script_owl_carousel']) || $settings['unload_script_owl_carousel'] == '0' || $settings['unload_script_owl_carousel'] == '') {
-                wp_enqueue_script('fat-carousel', FAT_PORTFOLIO_ASSET_JS_URL . 'library/owl-carousel/owl.carousel.min.js', array('jquery'), false, true);
+                wp_enqueue_script('carousel', FAT_PORTFOLIO_ASSET_JS_URL . 'library/owl-carousel/owl.carousel.min.js', array('jquery'), false, true);
             }
 
             wp_enqueue_style('flipster', FAT_PORTFOLIO_ASSET_JS_URL . 'library/flipster/jquery.flipster.min.css', array(), '1.1.2');
@@ -558,7 +551,6 @@ if (!class_exists('FAT_Portfolio')) {
                     }
 
                 }
-
                 if ($screen->base === 'fat-portfolio_page_fat-portfolio-shortcode') {
                     wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), false);
                     wp_enqueue_style('fat-portfolio-setting', FAT_PORTFOLIO_ASSET_CSS_URL . 'admin/setting.css', array('font-awesome'), false);
@@ -566,9 +558,9 @@ if (!class_exists('FAT_Portfolio')) {
                     $shortcode_data = array(
                         'ajax_url' => admin_url('admin-ajax.php')
                     );
-                    wp_enqueue_script('fat-clipboard', FAT_PORTFOLIO_ASSET_JS_URL . 'library/clipboard/clipboard.min.js', false, true);
+                    wp_enqueue_script('clipboard', FAT_PORTFOLIO_ASSET_JS_URL . 'library/clipboard/clipboard.min.js', false, true);
                     wp_enqueue_script('fat-portfolio-utils', FAT_PORTFOLIO_ASSET_JS_URL . 'admin/utils.js', array('jquery-ui-dialog'), false, true);
-                    wp_register_script('fat-portfolio-shortcodes', FAT_PORTFOLIO_ASSET_JS_URL . 'admin/shortcodes.js', array('clipboard', 'wp-util', 'fat-portfolio-utils'), false, true);
+                    wp_register_script('fat-portfolio-shortcodes', FAT_PORTFOLIO_ASSET_JS_URL . 'admin/shortcodes.js', array('clipboard', 'clipboard', 'wp-util', 'fat-portfolio-utils'), false, true);
                     wp_localize_script('fat-portfolio-shortcodes', 'shortcode_data', $shortcode_data);
                     wp_enqueue_script('fat-portfolio-shortcodes');
                 }
@@ -637,27 +629,27 @@ if (!class_exists('FAT_Portfolio')) {
 
             );
             $meta_boxes[] = array(
-                'title'    => esc_html__('Portfolio Media', 'fat-portfolio'),
+                'title'    => esc_html__('Afbeeldingen/video toevoegen', 'fat-portfolio'),
                 'id'       => 'fat-meta-box-gallery-type',
                 'priority' => 'high',
                 'pages'    => array(FAT_PORTFOLIO_POST_TYPE),
                 'fields'   => array(
                     array(
-                        'label'   => esc_html__('Select media type', 'fat-portfolio'),
+                        'label'   => esc_html__('Selecteer afbeelding/video', 'fat-portfolio'),
                         'id'      => 'fat_mb_gallery_type',
                         'type'    => 'radio',
                         'options' => array(
-                            'image' => 'Image gallery',
-                            'video' => 'Video Gallery'
+                            'image' => 'Afbeeldingen',
+                            'video' => 'Video'
                         ),
                         'std'     => 'image'
                     ),
                     array(
-                        'label'        => esc_html__('Select media source', 'fat-portfolio'),
+                        'label'        => esc_html__('Selecteer media bron', 'fat-portfolio'),
                         'id'           => 'fat_mb_media_source',
                         'type'         => 'radio',
                         'options'      => array(
-                            'media'     => 'From Wordpress attachment',
+                            'media'     => 'Uploaden',
                             'flickr'    => 'From Flickr',
                             'instagram' => 'From Instagram'
                         ),
@@ -669,7 +661,7 @@ if (!class_exists('FAT_Portfolio')) {
                         ),
                     ),
                     array(
-                        'label'        => esc_html__('Wordpress Media', 'fat-portfolio'),
+                        'label'        => esc_html__('Mediabibliotheek', 'fat-portfolio'),
                         'id'           => 'fat_mb_image_gallery',
                         'type'         => 'images',
                         'depend_field' => array(
@@ -677,7 +669,7 @@ if (!class_exists('FAT_Portfolio')) {
                             'value'   => 'media',
                             'compare' => '='
                         ),
-                        'description'  => 'Hover on image and use drag and drop to re order'
+                        'description'  => 'U kunt de volgorde wijzigen, door de afbeeldingen te slepen.'
                     ),
                     array(
                         'label'        => esc_html__('Flickr Media', 'fat-portfolio'),
@@ -722,24 +714,24 @@ if (!class_exists('FAT_Portfolio')) {
             );
 
             $meta_boxes[] = array(
-                'title'    => esc_html__('Portfolio Attribute', 'fat-portfolio'),
+                'title'    => esc_html__('Kenmerken project', 'fat-portfolio'),
                 'id'       => 'fat-meta-box-attribute',
                 'priority' => 'high',
                 'pages'    => array(FAT_PORTFOLIO_POST_TYPE),
                 'fields'   => array(
                     array(
-                        'label'  => esc_html__('Attribute', 'fat-portfolio'),
+                        'label'  => esc_html__('Kenmerk', 'fat-portfolio'),
                         'id'     => 'fat_mb_portfolio_attribute',
                         'type'   => 'repeat',
                         'fields' => array(
                             array(
-                                'label' => 'Title',
+                                'label' => 'Titel',
                                 'id'    => 'title_attribute',
                                 'type'  => 'text',
                                 'std'   => ''
                             ),
                             array(
-                                'label' => 'Value',
+                                'label' => 'Waarde',
                                 'id'    => 'value_attribute',
                                 'type'  => 'text',
                                 'std'   => ''
@@ -843,7 +835,6 @@ if (!class_exists('FAT_Portfolio')) {
                 return;
             }
             $shortcode = Fat_Portfolio_Base::get_shortcode_by_name($shortcode_name);
-
             if ($shortcode == null) {
                 esc_html_e('Could not found shortcode with this name', 'fat-portfolio');
                 return;

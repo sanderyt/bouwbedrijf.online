@@ -53,9 +53,6 @@ if(isset($detail_style) && ($detail_style =='single-small-image-slide-left' || $
                 <a class="nav-slideshow" href="<?php echo esc_url($post->guid); ?>" data-description="<?php echo ($post->post_excerpt!='' ? $post->post_excerpt : $post->post_title);?>"
                    data-index="<?php echo esc_attr($index++) ?>">
                     <img alt="portfolio" src="<?php echo esc_url($img) ?>" />
-                    <span class="fat-portfolio-image-title">
-                        <?php echo esc_html($post->post_title);?>
-                    </span>
                 </a>
             </div>
             <?php

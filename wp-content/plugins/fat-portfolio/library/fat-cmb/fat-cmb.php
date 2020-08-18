@@ -129,8 +129,7 @@ if (!class_exists('FAT_Cmb')) {
                 return;
             }
 
-            wp_enqueue_script('fat-cmb-utils', FAT_CMB_ASSET_JS_URL . 'fat-cmb-utils.js', array(), '1.0.0', true);
-            wp_enqueue_script('fat-cmb', FAT_CMB_ASSET_JS_URL . 'fat-cmb.js', array('fat-cmb-utils'), '1.0.0', true);
+            wp_enqueue_script('fat-cmb', FAT_CMB_ASSET_JS_URL . 'fat-cmb.js', array(), '1.0.0', true);
 
             // We'll use this nonce field later on when saving.
             wp_nonce_field('my_meta_box_nonce', 'meta_box_nonce');
@@ -457,7 +456,7 @@ if (!class_exists('FAT_Cmb')) {
                                 break;
                             default:
                                 $field_value = isset($_POST[$field['id']]) ? $_POST[$field['id']] : '';
-                                if ($field['type'] !== 'check' && $field['type'] !== 'ace' && $field['type'] !== 'select' && $field['type'] !== 'radio' ) {
+                                if ($field['type'] !== 'check' && $field['type'] !== 'ace' ) {
                                     $fat_cmb_section_value[$field['id']] = wp_kses($field_value, $allowed);
                                 } else {
                                     $fat_cmb_section_value[$field['id']] = $field_value;

@@ -1,7 +1,7 @@
 
 # BEGIN WordPress
-# De richtlijnen (regels) tussen `BEGIN WordPress` and `END WordPress` worden
-# dynamisch aangemaakt en zouden enkel aangepast mogen worden via WordPress filters.
+# De richtlijnen (regels) tussen "BEGIN WordPress" en `END WordPress` worden
+# dynamisch gegenereerd en zouden alleen aangepast mogen worden via WordPress filters.
 # Elke wijziging aan deze richtlijnen tussen deze markeringen worden overschreven.
 <IfModule mod_rewrite.c>
 RewriteEngine On

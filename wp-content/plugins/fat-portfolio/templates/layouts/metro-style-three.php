@@ -89,32 +89,6 @@ if (isset($authors) && is_array($authors) && count($authors) > 0) {
 if ($order_by) {
     $args['orderby'] = isset($order_by[0]) ? $order_by[0] : $order_by;
     $args['order'] = $order;
-}else{
-    if(!$full_gallery && $current_categories && is_array($current_categories) && count($current_categories)>0){
-        $order_by_term = array();
-        $query_args = array();
-        $query = '';
-        foreach ($categories as $cat){
-            $query_args = array(
-                'post_type' => FAT_PORTFOLIO_POST_TYPE,
-                'offset'         => 0,
-                'posts_per_page' => -1,
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => FAT_PORTFOLIO_CATEGORY_TAXONOMY,
-                        'field' => 'slug',
-                        'terms' => $cat
-                    )
-                )
-            );
-            $query  = get_posts($query_args);
-            foreach ($query as $q){
-                $order_by_term[] = $q->ID;
-            }
-        }
-        $args['orderby'] = 'post__in';
-        $args['post__in'] = $order_by_term;
-    }
 }
 
 $posts = new WP_Query($args);

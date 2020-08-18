@@ -9,6 +9,10 @@ $settings = function_exists('fat_get_settings') ? fat_get_settings() : array();
 
 wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), false);
 
+if(!isset($settings['single_unload_bootstrap']) || $settings['single_unload_bootstrap'] != '1'){
+    wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array(), false);
+}
+
 wp_enqueue_script('images-loaded', FAT_PORTFOLIO_ASSET_JS_URL . 'library/isotope/imagesloaded.pkgd.min.js', false, true);
 wp_enqueue_script('isotope', FAT_PORTFOLIO_ASSET_JS_URL . 'library/isotope/isotope.pkgd.min.js', false, true);
 wp_enqueue_script('masonry', FAT_PORTFOLIO_ASSET_JS_URL . 'library/isotope/masonry.pkgd.min.js', false, true);
@@ -64,15 +68,6 @@ do_action('fat_portfolio_before_single');
             </div>
         </div>
     <?php endif; ?>
-    <main>
-        <div class="container-fluid">
-            <div class="row subheader">
-                <div class="subheader__overlay"></div>
-                <div class="col d-flex justify-content-center align-items-center">
-                    <h1><?php the_title();?></h1>
-                </div>
-            </div>
-        </div>
     <div class="fat-portfolio-single <?php echo sprintf('%s %s %s', $css_class, $detail_style, $single_light_box_gallery); ?>">
         <div class="fat-container">
             <?php
@@ -110,7 +105,7 @@ do_action('fat_portfolio_before_single');
                     $gallery_type = get_post_meta(get_the_ID(), 'fat-meta-box-gallery-type', true);
                     $media_type = isset($gallery_type['fat_mb_gallery_type']) ? $gallery_type['fat_mb_gallery_type'] : 'image';
                     $media_source = isset($gallery_type['fat_mb_media_source']) ? $gallery_type['fat_mb_media_source'] : 'media';
-                    $portfolio_gallery = isset($gallery_type['fat_mb_image_gallery']) ? $gallery_type['fat_mb_image_gallery'] : '';
+                    $portfolio_gallery = isset($gallery_type['fat_mb_image_gallery']) ? $gallery_type['fat_mb_image_gallery'] : array();
                     $flickr_gallery_filter = isset($gallery_type['fat_mb_flickr_gallery']) ? $gallery_type['fat_mb_flickr_gallery'] : array();
                     $instagram_gallery_filter = isset($gallery_type['fat_mb_instagram_gallery']) ? $gallery_type['fat_mb_instagram_gallery'] : array();
 
@@ -150,17 +145,21 @@ do_action('fat_portfolio_before_single');
             if ($enable_navigation && file_exists($template_navigation)) {
                 include_once $template_navigation;
             }
+
             $template_related = FAT_PORTFOLIO_DIR_PATH . "/templates/single/single-related.php";
             $template_related = apply_filters('fat-portfolio-single-related-template', $template_related, $post_id);
             if ($enable_related_portfolio && file_exists($template_related)) {
                 include_once $template_related;
             }
 
+            // If comments are open or we have at least one comment, load up the comment template.
+            if ( comments_open() || get_comments_number() ) {
+                comments_template();
+            }
+
             ?>
         </div>
     </div>
-        </main>
-
 <?php
 
 do_action('fat_portfolio_end_single');

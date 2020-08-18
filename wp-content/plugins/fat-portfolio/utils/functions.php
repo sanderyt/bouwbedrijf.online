@@ -33,7 +33,6 @@ if (!function_exists('fat_portfolio_get_setting_default')) {
             'all_category_label'                => esc_html__('All Portfolio', 'fat-portfolio'),
             'enable_special_attribute'          => 0,
             'disable_detail'                    => 0,
-            'exclude_thumbnail'                    => 0,
             'title_image_popup_gallery'         => 'image_title',
             'load_script_first'                 => 0,
             'unload_script_modernizr'           => 0,

@@ -35,13 +35,10 @@
  */
 global $wp_version;
 
-
-
 if (!function_exists('fat_portfolio_image_resize')) {
     function fat_portfolio_image_resize($url, $width = NULL, $height = NULL, $crop = true, $retina = false)
     {
         global $wpdb;
-
         if (empty($url))
             return new WP_Error('no_image_url', esc_html__('No image URL has been entered.', 'fat-portfolio'), $url);
 
@@ -173,9 +170,6 @@ if (!function_exists('fat_portfolio_image_resize')) {
             }
 
             // Create the image array
-            if(filesize($resized_url)==0){
-                $resized_url = $url;
-            }
             $image_array = array(
                 'url' => $resized_url,
                 'width' => $resized_width,
@@ -184,21 +178,12 @@ if (!function_exists('fat_portfolio_image_resize')) {
             );
 
         } else {
-            if(filesize($dest_file_name)==0){
-                $image_array = array(
-                    'url' => $url,
-                    'width' => $dest_width,
-                    'height' => $dest_height,
-                    'type' => $ext
-                );
-            }else{
-                $image_array = array(
-                    'url' => str_replace(wp_basename($url), wp_basename($dest_file_name), $url),
-                    'width' => $dest_width,
-                    'height' => $dest_height,
-                    'type' => $ext
-                );
-            }
+            $image_array = array(
+                'url' => str_replace(wp_basename($url), wp_basename($dest_file_name), $url),
+                'width' => $dest_width,
+                'height' => $dest_height,
+                'type' => $ext
+            );
         }
 
         // Return image array
@@ -211,6 +196,7 @@ if (!function_exists('fat_portfolio_image_resize_id')) {
     function fat_portfolio_image_resize_id($images_id, $width = NULL, $height = NULL, $crop = true, $retina = false)
     {
         $output = '';
+
         if(class_exists( 'Jetpack' )&& method_exists( 'Jetpack', 'get_active_modules' ) && in_array( 'photon', Jetpack::get_active_modules() ) ){
             $url = wp_get_attachment_image_src($images_id, 'full');
             $url = isset($url[0]) ? $url[0] : '';
@@ -308,13 +294,7 @@ if (!function_exists('fat_portfolio_image_resize_id')) {
                 // Now let's save the image
 
                 $saved = $editor->save($dest_file_name);
-                if($saved instanceof WP_Error){
-                    return array(
-                        'url' => $url,
-                        'width' => $width,
-                        'height' => $height
-                    );
-                }
+
                 // Get resized image information
                 $resized_url = str_replace(wp_basename($url), wp_basename($saved['path']), $url);
                 $resized_width = $saved['width'];
@@ -328,9 +308,7 @@ if (!function_exists('fat_portfolio_image_resize_id')) {
                 }
 
                 // Create the image array
-                if(is_readable($resized_url) && filesize($resized_url)==0){
-                    $resized_url = $url;
-                }
+
                 $image_array = array(
                     'url' => $resized_url,
                     'width' => $resized_width,
@@ -339,21 +317,13 @@ if (!function_exists('fat_portfolio_image_resize_id')) {
                 );
 
             } else {
-                if(is_readable($dest_file_name) && filesize($dest_file_name)==0){
-                    $image_array = array(
-                        'url' => $url,
-                        'width' => $dest_width,
-                        'height' => $dest_height,
-                        'type' => $ext
-                    );
-                }else{
-                    $image_array = array(
-                        'url' => str_replace(wp_basename($url), wp_basename($dest_file_name), $url),
-                        'width' => $dest_width,
-                        'height' => $dest_height,
-                        'type' => $ext
-                    );
-                }
+
+                $image_array = array(
+                    'url' => str_replace(wp_basename($url), wp_basename($dest_file_name), $url),
+                    'width' => $dest_width,
+                    'height' => $dest_height,
+                    'type' => $ext
+                );
             }
             // Return image array
             return $image_array;

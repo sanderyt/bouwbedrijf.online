@@ -41,51 +41,45 @@ if (isset($settings['enable_special_attribute']) && $settings['enable_special_at
     $archive_page_id = isset($settings['archive_attr_page']) ? $settings['archive_attr_page'] : '';
 
     $country_attrs = $years_attrs = $type_attrs = $status_attrs = '';
-
-    if(isset($country) && is_array($country)){
-        foreach ($country as $c) {
-            if($archive_page_id !== ''){
-                $country_attrs .= sprintf('<a href="%s">%s</a>, ', esc_url(get_tag_link($c->term_id)), $c->name);
-            }else{
-                $country_attrs .= $c->name . ', ';
-            }
+    foreach ($country as $c) {
+        if($archive_page_id !== ''){
+            $country_attrs .= sprintf('<a href="%s">%s</a>, ', esc_url(get_tag_link($c->term_id)), $c->name);
+        }else{
+            $country_attrs .= $c->name . ', ';
         }
-        $country_attrs = rtrim($country_attrs,', ');
-    }
 
-    if(isset($years) && is_array($years)){
-        foreach ($years as $c) {
-            if($archive_page_id !== ''){
-                $years_attrs .= sprintf('<a href="%s">%s</a>, ', esc_url(get_tag_link($c->term_id)), $c->name);
-            }else{
-                $years_attrs .= $c->name . ', ';
-            }
+    }
+    $country_attrs = rtrim($country_attrs,', ');
+
+    foreach ($years as $c) {
+        if($archive_page_id !== ''){
+            $years_attrs .= sprintf('<a href="%s">%s</a>, ', esc_url(get_tag_link($c->term_id)), $c->name);
+        }else{
+            $years_attrs .= $c->name . ', ';
         }
-        $years_attrs = rtrim($years_attrs,', ');
-    }
 
-    if(isset($type) && is_array($type)){
-        foreach ($type as $c) {
-            if($archive_page_id !== ''){
-                $type_attrs .= sprintf('<a href="%s">%s</a>, ', esc_url(get_tag_link($c->term_id)), $c->name);
-            }else{
-                $type_attrs .= $c->name . ', ';
-            }
+    }
+    $years_attrs = rtrim($years_attrs,', ');
+
+    foreach ($type as $c) {
+        if($archive_page_id !== ''){
+            $type_attrs .= sprintf('<a href="%s">%s</a>, ', esc_url(get_tag_link($c->term_id)), $c->name);
+        }else{
+            $type_attrs .= $c->name . ', ';
         }
-        $type_attrs = rtrim($type_attrs,', ');
+
     }
+    $type_attrs = rtrim($type_attrs,', ');
 
-    if(isset($status) && is_array($status)){
-        foreach ($status as $c) {
-            if($archive_page_id !== ''){
-                $status_attrs .= sprintf('<a href="%s">%s</a>, ', esc_url(get_tag_link($c->term_id)), $c->name);
-            }else{
-                $status_attrs .= $c->name . ', ';
-            }
-
+    foreach ($status as $c) {
+        if($archive_page_id !== ''){
+            $status_attrs .= sprintf('<a href="%s">%s</a>, ', esc_url(get_tag_link($c->term_id)), $c->name);
+        }else{
+            $status_attrs .= $c->name . ', ';
         }
-        $status_attrs = rtrim($status_attrs,', ');
+
     }
+    $status_attrs = rtrim($status_attrs,', ');
 
     ?>
 
