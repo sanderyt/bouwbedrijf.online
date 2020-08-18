@@ -68,6 +68,15 @@ do_action('fat_portfolio_before_single');
             </div>
         </div>
     <?php endif; ?>
+    <main>
+    <div class="container-fluid">
+        <div class="row subheader">
+            <div class="subheader__overlay"></div>
+                <div class="col d-flex justify-content-center align-items-center">
+                <h1><?php the_title();?></h1>
+            </div>
+        </div>
+    </div>
     <div class="fat-portfolio-single <?php echo sprintf('%s %s %s', $css_class, $detail_style, $single_light_box_gallery); ?>">
         <div class="fat-container">
             <?php
@@ -160,6 +169,7 @@ do_action('fat_portfolio_before_single');
             ?>
         </div>
     </div>
+    </main>
 <?php
 
 do_action('fat_portfolio_end_single');
