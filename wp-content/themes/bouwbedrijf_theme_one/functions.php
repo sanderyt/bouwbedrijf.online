@@ -19,4 +19,7 @@ add_action( 'init', 'register_my_menus' );
 
 add_theme_support( 'post-thumbnails' );
 
+$role_object = get_role( 'editor' );
+$role_object->add_cap( 'edit_theme_options' );
+
 ?>
